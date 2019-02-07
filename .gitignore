@@ -4,3 +4,7 @@ node_modules
 *.lock
 
 package-lock.json
+
+#other
+.DS_Store
+*/DS_Store
