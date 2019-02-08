@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
+//components
 import Header from './header';
+import SubHeader from './subheader';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
@@ -47,10 +49,11 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Header isMobile={isMobile} />
+				<SubHeader isMobile={isMobile} />
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
+					<Home isMobile={isMobile} path="/" />
+					<Profile isMobile={isMobile} path="/profile/" user="me" />
+					<Profile isMobile={isMobile} path="/profile/:user" />
 				</Router>
 			</div>
 		);

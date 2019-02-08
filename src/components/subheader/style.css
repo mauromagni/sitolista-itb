@@ -1,0 +1,11 @@
+.subHdCont {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.subHdTxt {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    color: white;
+}
