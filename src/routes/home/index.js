@@ -1,10 +1,18 @@
+/*
+	AUTHOR: Federico D.
+	DATE: Feb 2019
+	PURPOSE: A Fast cool template for creating directory list websites
+*/
+
+//dependencies
 import { h } from 'preact';
+
+//styles
 import style from './style';
 
 const Home = () => (
 	<div class={style.home}>
-		<h1>Home</h1>
-		<p>This is the Home component.</p>
+		
 	</div>
 );
 

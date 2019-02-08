@@ -8,6 +8,25 @@ import Home from '../routes/home';
 import Profile from '../routes/profile';
 
 export default class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+		  width: window.innerWidth,
+		};
+	}
+
+	//adds resize listener
+	componentWillMount() {
+		window.addEventListener('resize', this.handleWindowSizeChange);
+	}
+	//removes resize listener
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.handleWindowSizeChange);
+	}
+
+	handleWindowSizeChange = () => {
+		this.setState({ width: window.innerWidth });
+	};
 	
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
@@ -17,10 +36,17 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
+	handleResponsive = () => {
+		const { width } = this.state;
+		const isMobile = width <= 600;
+		return isMobile;
+	}
+
 	render() {
+		const isMobile = this.handleResponsive();
 		return (
 			<div id="app">
-				<Header />
+				<Header isMobile={isMobile} />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
