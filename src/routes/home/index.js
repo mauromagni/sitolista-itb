@@ -7,12 +7,21 @@
 //dependencies
 import { h } from 'preact';
 
+//components
+import { TextField } from 'preact-fluid';
+
 //styles
 import style from './style';
 
 const Home = () => (
 	<div class={style.home}>
-		
+		<div id="yo" class={style.searchBarCont}>
+			<input
+			class={style.searchBar}
+			type="text"
+			placeholder="Search 103 sites"
+			/>
+		</div>
 	</div>
 );
 

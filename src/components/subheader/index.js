@@ -9,7 +9,7 @@ const SubHeader = (props) => {
 	if (isMobile) {
 		return (
 			<div class={style.subHdCont}>
-                <p class={style.subHdTxt} >Subheader Annoucement Here</p>
+                <p class={style.subHdTxt} >Subheader Annoucement Here for 2019</p>
             </div>
 		);
 	  } else {
