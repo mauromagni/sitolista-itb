@@ -8,12 +8,16 @@
 import { h } from 'preact';
 
 //components
-import { TextField } from 'preact-fluid';
+import ListsFeed from '../../components/listsfeed';
 
 //styles
 import style from './style';
 
-const Home = () => (
+const Home = (props) => {
+	
+	const isMobile = props.isMobile;
+
+	return (
 	<div class={style.home}>
 		<div id="yo" class={style.searchBarCont}>
 			<input
@@ -22,7 +26,8 @@ const Home = () => (
 			placeholder="Search 103 sites"
 			/>
 		</div>
+		<ListsFeed isMobile={isMobile} />
 	</div>
-);
+)};
 
 export default Home;

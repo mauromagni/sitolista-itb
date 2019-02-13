@@ -1,5 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
+import axios from 'axios';
+import api from '../utils/api'
 
 //components
 import Header from './header';
@@ -15,6 +17,7 @@ export default class App extends Component {
 		this.state = {
 		  width: window.innerWidth,
 		};
+		console.log(api);
 	}
 
 	//adds resize listener
@@ -29,6 +32,12 @@ export default class App extends Component {
 	handleWindowSizeChange = () => {
 		this.setState({ width: window.innerWidth });
 	};
+
+	//api call
+	getDirectoryData() {
+		// axios.get()
+
+	}
 	
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
