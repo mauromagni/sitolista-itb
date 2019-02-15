@@ -16,18 +16,20 @@ const ListsFeed = (props) => {
 
 	if (isMobile) {
 		return (
-			<Grid columns="repeat(auto-fit, minmax(250px, 1fr))" gap="20px">
-				<Cell width={1}>
-				<List>
-					<ListHeader title="Title" subtitle="Sub Title"/>
-						{listSections("s")}
-					</List>
-				</Cell>
-			</Grid>
+			<div class={style.mobileListFeedContainer}>
+				<Grid gap="20px" columns={12}>
+					<Cell width={12}>
+					<List>
+						<ListHeader title="Title" subtitle="Sub Title"/>
+							{listSections("s")}
+						</List>
+					</Cell>
+				</Grid>
+			</div>
 		);
 	  } else {
 		return (
-			<h2>Card Desktop</h2>
+			<h2>todo</h2>
 		);
 	}
 }
