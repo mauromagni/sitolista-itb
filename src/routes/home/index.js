@@ -41,7 +41,6 @@ export default class Home extends Component {
 	}
 
 	render( { }, { test, data }) {
-		console.log(this.state)
 		//loading prompt
 		if (data === null) {
 			return (
@@ -60,7 +59,7 @@ export default class Home extends Component {
 				placeholder="Search 103 sites"
 				/>
 			</div>
-			<ListsFeed listData={data} isMobile={isMobile} />
+			<ListsFeed listFeedData={data} isMobile={isMobile} />
 		</div>
 	)
 	}

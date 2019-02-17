@@ -9,69 +9,51 @@ import style from './style';
 
 const ListsFeed = (props) => {
 
-	let listSections = (a) => {
+	const  { isMobile, listFeedData } = props;
+
+	const buildLinkList = (linkListData) => {
+		let linkList = linkListData.map( (link, i) => {
+			return (
+				<ListItem>
+				<div><Link href={link.link}>{link.link}</Link></div>
+			</ListItem>
+			)
+		})
 		return (
 			<ListSection>
-				<ListItem
-					active={false}
-				>
-					<div><Link href="/">intro.com</Link></div>
-				</ListItem>
-				<ListItem
-					active={false}
-				>
-					Hello world
-				</ListItem>
-				<ListItem
-					active={false}
-				>
-					Hello world
-				</ListItem>
-				<ListItem
-					active={false}
-				>
-					Hello world
-				</ListItem>
+				{ linkList }
 			</ListSection>
 		)
 	}
-	
-	const isMobile = props.isMobile;
+
+	const buildListFeed = (listFeedData) => {
+		let feedCards = listFeedData.map( (card, i) => {
+			console.log("[*]", card, i);
+			return (
+				<Cell width={12}>
+					<List>
+						<ListHeader title={card.categoryName} subtitle={card.categorySubtitle} />
+						{buildLinkList(card.categoryItems)}
+					</List>
+				</Cell>
+			)
+		})
+		return (
+			<Grid gap="20px" columns={12}>
+				{ feedCards }
+			</Grid>
+		)
+	}
 
 	if (isMobile) {
 		return (
 			<div class={style.mobileListFeedContainer}>
-				<Grid gap="20px" columns={12}>
-					<Cell width={12}>
-					<List>
-						<ListHeader title="Title" subtitle="Sub Title"/>
-							{listSections("s")}
-						</List>
-					</Cell>
-					<Cell width={12}>
-					<List>
-						<ListHeader title="Title" subtitle="Sub Title"/>
-							{listSections("s")}
-						</List>
-					</Cell>
-					<Cell width={12}>
-					<List>
-						<ListHeader title="Title" subtitle="Sub Title"/>
-							{listSections("s")}
-						</List>
-					</Cell>
-					<Cell width={12}>
-					<List>
-						<ListHeader title="Title" subtitle="Sub Title"/>
-							{listSections("s")}
-						</List>
-					</Cell>
-				</Grid>
+					{ buildListFeed(listFeedData)}
 			</div>
 		);
 	  } else {
 		return (
-			<h2>todo</h2>
+			<h2>desktop version todo</h2>
 		);
 	}
 }
