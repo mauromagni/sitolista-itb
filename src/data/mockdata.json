@@ -13,6 +13,18 @@
                 "spedizione qualche volta troppo lunga",
                 "nessun negozio fisico"
             ]
+        },
+        {
+            "link": "hobbyandvolley.it",
+            "description": "negozio online per la pallavolo, specialista in scarpe mitzuno",
+            "pro": [
+                "spedizione veloce",
+                "negozio fisico"
+            ],
+            "contro": [
+                "sito lento",
+                "servizio clienti pessimo"
+            ]
         }
     ]
 }
