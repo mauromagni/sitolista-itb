@@ -2,18 +2,3 @@
 	min-height: 100%;
 	width: 100%;
 }
-
-.searchBarCont {
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
-}
-
-.searchBar {
-	padding: 8px;
-	margin: 10px;
-	margin-left: 20vw;
-	margin-right: 20vw;
-	border: 1px black solid;
-	font-size: 0.8rem;
-}

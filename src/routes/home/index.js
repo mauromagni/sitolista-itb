@@ -15,6 +15,7 @@ import style from './style';
 
 //DEV ONLY -- fake api call
 import data from '../../data/mockdata.json';
+import SearchBar from '../../components/searchbar';
 
 export default class Home extends Component {
 
@@ -52,13 +53,7 @@ export default class Home extends Component {
 		//TODO put searchbar in another component
 		return (
 		<div class={style.home}>
-			<div id="yo" class={style.searchBarCont}>
-				<input
-				class={style.searchBar}
-				type="text"
-				placeholder="Search 103 sites"
-				/>
-			</div>
+			<SearchBar isMobile={isMobile} />
 			<ListsFeed listFeedData={data} isMobile={isMobile} />
 		</div>
 	)
