@@ -1,10 +1,11 @@
 [
     {
-        "categoryName": "volley ecommerce",
-        "categorySubtitle": "Websites where you can buy volley stuff",
+        "categoryName": "Category one",
+        "categorySubtitle": "Websites where you can buy stuff or do something else",
         "categoryItems": [
             {
-                "link": "customvolley.com",
+                "link": "preactjs.com",
+                "url": "https://preactjs.com",
                 "description": "one day I played volley, and I really got into it, I just wish that back then there was a website like customvolley.",
                 "pro": [
                     "prezzi buoni",
@@ -17,7 +18,8 @@
                 ]
             },
             {
-                "link": "hobbyandvolley.it",
+                "link": "anotherlink.it",
+                "url": "https://preactjs.com",
                 "description": "negozio online per la pallavolo, specialista in scarpe mitzuno",
                 "pro": [
                     "spedizione veloce",
@@ -31,11 +33,12 @@
         ]
     },
     {
-        "categoryName": "category two",
+        "categoryName": "Category two",
         "categorySubtitle": "Th second category, the more the better!",
         "categoryItems": [
             {
                 "link": "test.com",
+                "url": "https://example.com",
                 "description": "a review of this website, however you wanna write it",
                 "pro": [
                     "good stuff",
@@ -49,6 +52,7 @@
             },
             {
                 "link": "example.it",
+                "url": "https://example.com",
                 "description": "come write a new decription with better words and phrases n stuff no?",
                 "pro": [
                     "again good vibes",

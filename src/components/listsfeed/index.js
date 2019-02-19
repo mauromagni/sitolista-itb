@@ -3,7 +3,7 @@ import { Link } from 'preact-router/match';
 
 import {Grid, Cell} from 'preact-fluid';
 import {List, ListHeader, ListSection, ListItem} from 'preact-fluid';
-import {Icon} from 'preact-fluid';
+import {Icon, Image} from 'preact-fluid';
 
 import style from './style';
 
@@ -12,11 +12,20 @@ const ListsFeed = (props) => {
 	const  { isMobile, listFeedData } = props;
 
 	const buildLinkList = (linkListData) => {
-		let linkList = linkListData.map( (link, i) => {
+		let linkList = linkListData.map( (listItem, i) => {
 			return (
 				<ListItem>
-				<div><Link href={link.link}>{link.link}</Link></div>
-			</ListItem>
+					<div class={style.listItemDiv}>
+						<Image
+							src={`https://www.google.com/s2/favicons?domain=${listItem.link}`}
+							style={`height: 20px; width: 20px;`}
+							inline
+							rounded
+						/>
+						<Link class={style.singleLink} href={listItem.url}>{listItem.link}</Link>
+
+					</div>
+				</ListItem>
 			)
 		})
 		return (

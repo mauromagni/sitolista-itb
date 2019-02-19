@@ -5,3 +5,14 @@
     flex-direction: column;
     margin-left: 5vw;
 }
+
+.listItemDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.singleLink {
+    margin-left: 5vw;
+}

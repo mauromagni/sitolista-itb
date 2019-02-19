@@ -12,7 +12,7 @@ const SearchBar = (props) => {
 				<input
                     class={style.searchBar}
                     type="text"
-                    placeholder="Search 103 sites"
+                    placeholder="Searchbar component"
 				/>
 			</div>
 		);
