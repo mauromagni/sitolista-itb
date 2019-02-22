@@ -6,6 +6,7 @@ import api from '../utils/api'
 //components
 import Header from './header';
 import SubHeader from './subheader';
+import Footer from './footer';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
@@ -66,6 +67,7 @@ export default class App extends Component {
 					<Profile isMobile={isMobile} path="/profile/:user" />
 					<Review isMobile={isMobile} path="/review/:link" link="test" />
 				</Router>
+				<Footer isMobile={isMobile} />
 			</div>
 		);
 	}
