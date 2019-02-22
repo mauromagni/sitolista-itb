@@ -9,13 +9,13 @@ import { h, Component, render } from 'preact';
 
 //components
 import ListsFeed from '../../components/listsfeed';
+import SearchBar from '../../components/searchbar';
 
 //styles
 import style from './style';
 
 //DEV ONLY -- fake api call
 import data from '../../data/mockdata.json';
-import SearchBar from '../../components/searchbar';
 
 export default class Home extends Component {
 
@@ -41,16 +41,14 @@ export default class Home extends Component {
 		this.getDataApi()
 	}
 
-	render( { }, { test, data }) {
+	render( { isMobile }, { test, data }) {
 		//loading prompt
 		if (data === null) {
 			return (
 				<h1>LOADING...</h1>
 			)
 		}
-		const {props} = this
-		const isMobile = props.isMobile;
-		//TODO put searchbar in another component
+
 		return (
 		<div class={style.home}>
 			<SearchBar isMobile={isMobile} />

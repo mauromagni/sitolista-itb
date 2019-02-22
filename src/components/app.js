@@ -10,6 +10,7 @@ import SubHeader from './subheader';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Profile from '../routes/profile';
+import Review from '../routes/review'
 
 export default class App extends Component {
 	constructor() {
@@ -63,6 +64,7 @@ export default class App extends Component {
 					<Home isMobile={isMobile} path="/" />
 					<Profile isMobile={isMobile} path="/profile/" user="me" />
 					<Profile isMobile={isMobile} path="/profile/:user" />
+					<Review isMobile={isMobile} path="/review/:link" link="test" />
 				</Router>
 			</div>
 		);
