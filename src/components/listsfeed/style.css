@@ -16,3 +16,14 @@
 .singleLink {
     margin-left: 5vw;
 }
+
+.reviewLink {
+    align-self: flex-end;
+}
+
+.masterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

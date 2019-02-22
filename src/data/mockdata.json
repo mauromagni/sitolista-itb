@@ -4,7 +4,8 @@
         "categorySubtitle": "Websites where you can buy stuff or do something else",
         "categoryItems": [
             {
-                "link": "preactjs.com",
+                "name": "PreactJS",
+                "domain": "preactjs.com",
                 "url": "https://preactjs.com",
                 "description": "one day I played volley, and I really got into it, I just wish that back then there was a website like customvolley.",
                 "pro": [
@@ -18,7 +19,8 @@
                 ]
             },
             {
-                "link": "anotherlink.it",
+                "name": "Another Link",
+                "domain": "anotherlink.it",
                 "url": "https://preactjs.com",
                 "description": "negozio online per la pallavolo, specialista in scarpe mitzuno",
                 "pro": [
@@ -29,6 +31,20 @@
                     "sito lento",
                     "servizio clienti pessimo"
                 ]
+            },
+            {
+                "name": "Npm Official Website",
+                "domain": "npmjs.com",
+                "url": "https://npm.com",
+                "description": "sito ampio con domain uk like a legit uk website shpuld be",
+                "pro": [
+                    "good design",
+                    "cool content"
+                ],
+                "contro": [
+                    "slow site",
+                    "no support for customers"
+                ]
             }
         ]
     },
@@ -37,7 +53,8 @@
         "categorySubtitle": "Th second category, the more the better!",
         "categoryItems": [
             {
-                "link": "test.com",
+                "name": "HelpfulSite",
+                "domain": "test.com",
                 "url": "https://example.com",
                 "description": "a review of this website, however you wanna write it",
                 "pro": [
@@ -47,11 +64,13 @@
                 ],
                 "contro": [
                     "no bueno man",
-                    "no woman no cry"
+                    "no woman no cry",
+                    "another good good reason here"
                 ]
             },
             {
-                "link": "example.it",
+                "name": "Google Maps",
+                "domain": "maps.google.com",
                 "url": "https://example.com",
                 "description": "come write a new decription with better words and phrases n stuff no?",
                 "pro": [

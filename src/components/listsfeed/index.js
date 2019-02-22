@@ -15,15 +15,25 @@ const ListsFeed = (props) => {
 		let linkList = linkListData.map( (listItem, i) => {
 			return (
 				<ListItem>
+					<div class={style.masterContainer}>
 					<div class={style.listItemDiv}>
 						<Image
-							src={`https://www.google.com/s2/favicons?domain=${listItem.link}`}
+							src={`https://www.google.com/s2/favicons?domain=${listItem.domain}`}
 							style={`height: 20px; width: 20px;`}
 							inline
 							rounded
 						/>
-						<Link class={style.singleLink} href={listItem.url}>{listItem.link}</Link>
-
+						<Link class={style.singleLink} href={listItem.url}>{listItem.name}</Link>
+						
+					</div>
+					<span
+						className="emoji"
+						role="img"
+						aria-label={`${listItem.domain} description`}
+						aria-hidden={false}
+					>
+						🔎
+					</span>
 					</div>
 				</ListItem>
 			)
