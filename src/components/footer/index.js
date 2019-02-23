@@ -8,13 +8,13 @@ const Footer = (props) => {
 
 	if (isMobile) {
 		return (
-			<footer >
-				<p class={style.footContainerMob}>Footer mobile</p>
+			<footer class={style.footerContainerMob} >
+				<p class={style.footerCopyText}>© 2019 directoryWebsite - Reviews The Best Sites! </p>
 			</footer>
 		);
 	  } else {
 		return (
-			<footer class={style.header}>
+			<footer class={style.footerContainerDesk}>
 				<p>Footer Desktop</p>
 			</footer>
 		);

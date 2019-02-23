@@ -25,7 +25,7 @@ const HomeFaq = (props) => {
             </div>
         )
     }
-            //DEBUG ********** REFACTOR ***** DISPLAY MOCKfaq
+            //DEBUG **** ****** REFACTOR ***** DISPLAY MOCKfaq
 	if (isMobile) {
 		return (
 			<div class={style.mobileFaqCont}>
