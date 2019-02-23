@@ -16,7 +16,7 @@ export default class Review extends Component {
 
 
 	render( { isMobile, link }, { test }) {
-        console.log("YOOOO!@#!@#!@#!@")
+        
 		return (
 		<div class={style.home}>
 			<SearchBar isMobile={isMobile} />

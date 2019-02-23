@@ -8,8 +8,8 @@ const Footer = (props) => {
 
 	if (isMobile) {
 		return (
-			<footer class={style.header}>
-				<p>Footer mobile</p>
+			<footer >
+				<p class={style.footContainerMob}>Footer mobile</p>
 			</footer>
 		);
 	  } else {

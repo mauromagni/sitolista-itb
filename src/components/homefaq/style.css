@@ -1,0 +1,15 @@
+.mobileFaqCont {
+    width: 90vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10vw;
+}
+
+.mobileFaqHeadline {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.mobileFaqParagraph {
+    line-height: 1.7rem;
+}
