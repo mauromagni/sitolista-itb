@@ -9,7 +9,7 @@ const Footer = (props) => {
 	if (isMobile) {
 		return (
 			<footer class={style.footerContainerMob} >
-				<p class={style.footerCopyText}>© 2019 directoryWebsite - Reviews The Best Sites! </p>
+				<p class={style.footerCopyText}>© 2019 directoryWebsite - Reviews The Best Sites! 👍🏼</p>
 			</footer>
 		);
 	  } else {

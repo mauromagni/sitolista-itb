@@ -1,0 +1,11 @@
+.mobilemenu {
+    width: 60vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    background: #FAFAFA;
+    box-shadow: 2px 2px 2px #333;
+
+}

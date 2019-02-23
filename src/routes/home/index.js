@@ -11,6 +11,7 @@ import { h, Component, render } from 'preact';
 import ListsFeed from '../../components/listsfeed';
 import SearchBar from '../../components/searchbar';
 import HomeFaq from '../../components/homefaq';
+import MobileMenu from '../../components/mobilemenu';
 
 //styles
 import style from './style';
@@ -63,6 +64,7 @@ export default class Home extends Component {
 
 		return (
 		<div class={style.home}>
+			<MobileMenu isMobile={isMobile} />
 			<SearchBar isMobile={isMobile} />
 			<ListsFeed listFeedData={listData} isMobile={isMobile} />
 			<HomeFaq faqData={faqData} isMobile={isMobile} />

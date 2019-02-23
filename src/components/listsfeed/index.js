@@ -27,6 +27,7 @@ const ListsFeed = (props) => {
 						
 					</div>
 					<span
+						onClick={()=>console.log("****")}
 						className="emoji"
 						role="img"
 						aria-label={`${listItem.domain} description`}
