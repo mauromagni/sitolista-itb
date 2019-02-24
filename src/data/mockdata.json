@@ -111,6 +111,141 @@
                     "sito lento",
                     "bad customer service"
                 ]
+            },
+            {
+                "name": "Amazon",
+                "domain": "amazon.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "Bitnami",
+                "domain": "bitnami.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "UltimateGuitar",
+                "domain": "ultimate-guitar.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Category three",
+        "categorySubtitle": "Th third category, the more the better!",
+        "categoryEmoji": "👾",
+        "categoryItems": [
+            {
+                "name": "AnotherSite",
+                "domain": "thenx.com",
+                "url": "https://example.com",
+                "description": "a review of this website, however you wanna write it",
+                "pro": [
+                    "good stuff",
+                    "pretty vibes",
+                    "ottimo blog"
+                ],
+                "contro": [
+                    "no bueno man",
+                    "no woman no cry",
+                    "another good good reason here"
+                ]
+            },
+            {
+                "name": "BodyBuilding Official",
+                "domain": "bodybuilding.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "YouTube",
+                "domain": "youtube.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "Github",
+                "domain": "github.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "CodeMentor",
+                "domain": "codementor.io",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "W3Schools",
+                "domain": "w3schools.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
             }
         ]
     }
