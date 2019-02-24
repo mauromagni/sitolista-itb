@@ -48,7 +48,7 @@ const ListsFeed = (props) => {
 
 	const buildListFeed = (listFeedData) => {
 		let feedCards = listFeedData.map( (card, i) => {
-			console.log("[*]", card, i);
+			// console.log("[*]", card, i); //debug
 			return (
 				<Cell width={12}>
 					<List>

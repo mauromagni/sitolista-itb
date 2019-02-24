@@ -64,7 +64,7 @@ export default class Home extends Component {
 
 		return (
 		<div class={style.home}>
-			<MobileMenu isMobile={isMobile} />
+			<MobileMenu listFeedData={listData} isMobile={isMobile} />
 			<SearchBar isMobile={isMobile} />
 			<ListsFeed listFeedData={listData} isMobile={isMobile} />
 			<HomeFaq faqData={faqData} isMobile={isMobile} />

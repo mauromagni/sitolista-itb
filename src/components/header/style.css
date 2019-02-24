@@ -3,6 +3,13 @@
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: grey;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 100;
+	overflow: scroll;
+	height: 10vh;
 }
 
 

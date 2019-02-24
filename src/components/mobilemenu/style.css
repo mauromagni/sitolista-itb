@@ -1,11 +1,68 @@
 .mobilemenu {
     width: 60vw;
     position: fixed;
-    top: 0;
+    top: 10vh;
     left: 0;
     height: 100vh;
     z-index: 100;
     background: #FAFAFA;
     box-shadow: 2px 2px 2px #333;
+    display: flex;
+    flex-direction: column;
+}
 
+.goToHomepage {
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px grey solid;
+}
+
+.goToHomepageTitle{ 
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-weight: bold;
+}
+
+ul {
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.homeLink {
+    margin-left: 4vw;
+}
+
+.category1 {
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.categoryLink {
+    font-size: 0.92rem;
+    padding-bottom: 1vw;
+}
+
+.rightMenuLinkMob {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.categoryEmojiMob {
+    font-size: 2.1rem;
+    padding-right: 2vw;
+}
+
+.mobMenuFavicon {
+    padding: 1vw;
+}
+
+.mobileMenuIconsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }

@@ -56,9 +56,10 @@ export default class App extends Component {
 	}
 
 	render() {
+		const styles = {overflow: 'scroll'}
 		const isMobile = this.handleResponsive();
 		return (
-			<div id="app">
+			<div style={styles} id="app">
 				<Header isMobile={isMobile} />
 				<SubHeader isMobile={isMobile} />
 				<Router onChange={this.handleRoute}>

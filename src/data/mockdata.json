@@ -2,6 +2,7 @@
     {
         "categoryName": "Category one",
         "categorySubtitle": "Websites where you can buy stuff or do something else",
+        "categoryEmoji": "👑",
         "categoryItems": [
             {
                 "name": "PreactJS",
@@ -51,6 +52,7 @@
     {
         "categoryName": "Category two",
         "categorySubtitle": "Th second category, the more the better!",
+        "categoryEmoji": "🍓",
         "categoryItems": [
             {
                 "name": "HelpfulSite",
