@@ -4,14 +4,15 @@ import style from './style';
 
 const Header = (props) => {
 	
-	const isMobile = props.isMobile;
+	const isMobile = props.isMobile
+	const toggleMenu = props.toggleMenu
 
 	if (isMobile) {
 		return (
 			<header class={style.header}>
 				<h1 class={style.bannerMob}>Big Mobile Banner Here</h1>
 				<nav class={style.menuBtn}>
-					<Link activeClassName={style.active} href="#">MENU</Link>
+					<Link onClick={() => toggleMenu()} activeClassName={style.active} href="#">MENU</Link>
 				</nav>
 			</header>
 		);

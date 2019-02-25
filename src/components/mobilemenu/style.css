@@ -9,6 +9,35 @@
     box-shadow: 2px 2px 2px #333;
     display: flex;
     flex-direction: column;
+    visibility: hidden
+}
+
+.mobilemenuin {
+    width: 60vw;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    background: #FAFAFA;
+    box-shadow: 2px 2px 2px #333;
+    display: flex;
+    flex-direction: column;
+    animation: fade-me-in 2s 1;
+}
+
+.mobilemenuout {
+    width: 60vw;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    background: #FAFAFA;
+    box-shadow: 2px 2px 2px #333;
+    display: flex;
+    flex-direction: column;
+    animation: fade-me-out 2s forwards;
 }
 
 .goToHomepage {
@@ -79,4 +108,31 @@ ul {
 .numOfLinks {
     font-size: 0.7rem;
     display: contents;
+}
+
+
+@keyframes fade-me-in {
+    0% {
+      opacity: 0;
+    }
+    /* Adding a step in the middle */
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fade-me-out {
+    0% {
+      opacity: 1;
+    }
+    /* Adding a step in the middle */
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
 }

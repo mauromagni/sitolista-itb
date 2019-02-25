@@ -54,7 +54,7 @@ export default class Home extends Component {
 		this.getFaqDataApi();
 	}
 
-	render( { isMobile }, { test, listData, faqData }) {
+	render( { isMobile, showMenu }, { test, listData, faqData }) {
 		//loading prompt
 		if (listData === null) {
 			return (
@@ -64,7 +64,7 @@ export default class Home extends Component {
 
 		return (
 		<div class={style.home}>
-			<MobileMenu listFeedData={listData} isMobile={isMobile} />
+			<MobileMenu showMenu={showMenu} listFeedData={listData} isMobile={isMobile} />
 			<SearchBar isMobile={isMobile} />
 			<ListsFeed listFeedData={listData} isMobile={isMobile} />
 			<HomeFaq faqData={faqData} isMobile={isMobile} />

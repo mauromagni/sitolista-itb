@@ -19,7 +19,7 @@ export default class MobileMenu extends Component {
 	}
 
 	//util functions ----
-
+    
 
 	// gets called when this route is navigated to
 	componentDidMount() {
@@ -28,15 +28,14 @@ export default class MobileMenu extends Component {
 
     generateFavicons(linkData) {
         let favicons;
-        console.log(linkData);
         favicons = linkData.slice(0, 5).map( (link, i) => {
             return (
-                <Image
+            <Image
                 src={`https://www.google.com/s2/favicons?domain=${link.domain}`}
                 style={{padding: '0.5vw'}}
                 inline
                 rounded
-                />
+            />
             )
         })
 
@@ -52,7 +51,7 @@ export default class MobileMenu extends Component {
 
         mobMenuList = listFeedData.map(
             (categoryItem, i ) => {
-                console.log(categoryItem);
+
                 return (
                     <li key={`category-${i}`} class={i % 2 === 0 ? style.category1 : style.category2 }>
                         <span class={style.categoryEmojiMob}>
@@ -78,15 +77,25 @@ export default class MobileMenu extends Component {
         )
     }
 
-	render( { isMobile, listFeedData }, { test }) {
+	render( { isMobile, listFeedData, showMenu }, { test }) {
         
         //do not render on desktop
-        console.log(isMobile)
         if (isMobile === false) return ;
-		
+        
+        //menu logic
+        let menuStyles;
+        console.log(showMenu)
+        if (showMenu === null) {
+            menuStyles = style.mobilemenu
+        }
+        else if (showMenu === false) {
+            menuStyles = style.mobilemenuout
+        } else {
+            menuStyles = style.mobilemenuin
+        }
 
 		return (
-            <div class={style.mobilemenu}>
+            <div class={menuStyles}>
                 <div class={style.goToHomepageTitle}>
                     HOMEPAGE
                 </div>

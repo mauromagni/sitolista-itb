@@ -18,6 +18,7 @@ export default class App extends Component {
 		super();
 		this.state = {
 		  width: window.innerWidth,
+		  showMenu: null
 		};
 		console.log(api);
 	}
@@ -40,6 +41,11 @@ export default class App extends Component {
 		// axios.get()
 
 	}
+
+	toggleMenu = () => {
+		console.log("MENU OPEN: ", !this.state.showMenu);
+        this.setState( {showMenu: !this.state.showMenu} );
+    }
 	
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
@@ -56,14 +62,14 @@ export default class App extends Component {
 	}
 
 	render() {
-		const styles = {overflow: 'scroll'}
+		const appStyles = {overflow: 'scroll'}
 		const isMobile = this.handleResponsive();
 		return (
-			<div id="app">
-				<Header isMobile={isMobile} />
+			<div style={appStyles} id="app">
+				<Header toggleMenu={this.toggleMenu} isMobile={isMobile} />
 				<SubHeader isMobile={isMobile} />
 				<Router onChange={this.handleRoute}>
-					<Home isMobile={isMobile} path="/" />
+					<Home showMenu={this.state.showMenu} isMobile={isMobile} path="/" />
 					<Profile isMobile={isMobile} path="/profile/" user="me" />
 					<Profile isMobile={isMobile} path="/profile/:user" />
 					<Review isMobile={isMobile} path="/review/:link" link="test" />
