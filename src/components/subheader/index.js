@@ -1,5 +1,7 @@
 import { h } from 'preact';
-import { Link } from 'preact-router/match';
+import { Router } from 'preact-router';
+import { Match } from 'preact-router/match';
+
 import style from './style';
 
 const SubHeader = (props) => {
@@ -9,13 +11,23 @@ const SubHeader = (props) => {
 	if (isMobile) {
 		return (
 			<div class={style.subHdCont}>
-                <p class={style.subHdTxt} >Subheader Component Here</p>
-            </div>
+				<Match path="/">
+					{ 
+						({ matches }) => {
+							if (matches) {
+								return ( <p class={style.subHdTxt} >Bookmark this website!</p> )
+							} else {
+								return ( <div class={style.subHdTxt}> <a class={style.backToPage} href="/">Homepage</a> <span class={style.hierarchySymb}>&gt;</span> {window.location.pathname.split('/')[2]} </div> )
+							}
+					}
+					}
+				</Match>
+			</div>
 		);
 	  } else {
 		return (
             <div>
-                <p>Subheader Annoucement Here</p>
+                <p>Desktop Subheader Annoucement Here</p>
             </div>
 		);
 	}

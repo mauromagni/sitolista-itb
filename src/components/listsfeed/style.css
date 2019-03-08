@@ -34,3 +34,7 @@
     top: -200px;
     visibility: hidden;
 }
+
+.goToReview {
+    text-decoration: none;
+}

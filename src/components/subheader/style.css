@@ -5,7 +5,18 @@
 
 .subHdTxt {
     text-align: center;
+    font-size: 1.1rem;
     padding: 5px;
+    padding-bottom: 10px;
     margin: 0;
     color: white;
+}
+
+.backToPage {
+    color: white;
+}
+
+.hierarchySymb {
+    padding-right: 5px;
+    padding-left: 5px;
 }
