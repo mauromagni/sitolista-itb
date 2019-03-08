@@ -78,7 +78,6 @@ export default class MobileMenu extends Component {
     }
 
     _handleClickMenu(event) {
-        console.log("porcodio", event.target.id.toLowerCase().replace(' ', '-'));
         this.props.toggleMenu();
     }
 

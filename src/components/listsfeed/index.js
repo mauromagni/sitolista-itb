@@ -23,7 +23,7 @@ const ListsFeed = (props) => {
 							inline
 							rounded
 						/>
-						<Link class={style.singleLink} href={listItem.url}>{listItem.name}</Link>
+						<a target="_blank" class={style.singleLink} href={listItem.url}>{listItem.name}</a>
 						
 					</div>
 					<span
@@ -55,7 +55,7 @@ const ListsFeed = (props) => {
 				<Cell width={12}>
 					<div class={style.anchorPoint} id={cardID} />
 					<List >
-						<ListHeader title={card.categoryName} subtitle={card.categorySubtitle} />
+						<ListHeader style={{textAlign: 'center'}} title={`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}  />
 						{buildLinkList(card.categoryItems)}
 					</List>
 				</Cell>
