@@ -62,14 +62,14 @@ export default class App extends Component {
 	}
 
 	render() {
-		const appStyles = {overflow: 'scroll'}
+		const appStyles = {overflow: 'scroll', tapHighlightColor: 'transparent'}
 		const isMobile = this.handleResponsive();
 		return (
 			<div style={appStyles} id="app">
-				<Header toggleMenu={this.toggleMenu} isMobile={isMobile} />
+				<Header showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} />
 				<SubHeader isMobile={isMobile} />
 				<Router onChange={this.handleRoute}>
-					<Home showMenu={this.state.showMenu} isMobile={isMobile} path="/" />
+					<Home showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} path="/" />
 					<Profile isMobile={isMobile} path="/profile/" user="me" />
 					<Profile isMobile={isMobile} path="/profile/:user" />
 					<Review isMobile={isMobile} path="/review/:link" link="test" />

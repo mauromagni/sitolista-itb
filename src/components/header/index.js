@@ -4,16 +4,30 @@ import style from './style';
 
 const Header = (props) => {
 	
-	const isMobile = props.isMobile
-	const toggleMenu = props.toggleMenu
+	const isMobile = props.isMobile;
+	const toggleMenu = props.toggleMenu;
+	const showMenu = props.showMenu;
+
+	const generateMenuIcon = (menuVisible) => {
+		let menuIcon;
+		if (!menuVisible || menuVisible === null) {
+			menuIcon = (<img class={style.menuBtnIcon} src={"../../assets/img/menu3d.svg"} />)
+		} else {
+			menuIcon = (<img class={style.menuBtnIcon} src={"../../assets/img/stop.svg"} />)
+		}
+		return menuIcon;
+	}
 
 	if (isMobile) {
 		return (
 			<header class={style.header}>
-				<h1 class={style.bannerMob}>Big Mobile Banner Here</h1>
 				<nav class={style.menuBtn}>
-					<Link onClick={() => toggleMenu()} activeClassName={style.active} href="#">MENU</Link>
+					<Link onClick={() => toggleMenu()} activeClassName={style.active} href="#">
+						{ generateMenuIcon(showMenu)}
+					</Link>
 				</nav>
+				<h1 class={style.bannerMob}>DirectoryWebsite.com</h1>
+
 			</header>
 		);
 	  } else {

@@ -51,14 +51,14 @@ export default class MobileMenu extends Component {
 
         mobMenuList = listFeedData.map(
             (categoryItem, i ) => {
-
+                let cateID = categoryItem.categoryName.toLowerCase().replace(' ', '-');
                 return (
                     <li key={`category-${i}`} class={i % 2 === 0 ? style.category1 : style.category2 }>
                         <span class={style.categoryEmojiMob}>
                             {categoryItem.categoryEmoji}
                         </span>
                         <div class={style.rightMenuLinkMob}>
-                            <Link class={style.categoryLink} href="/">{categoryItem.categoryName}</Link>
+                            <Link id={categoryItem.categoryName} onClick={(e) => this._handleClickMenu(e)} class={style.categoryLink} href={`#${cateID}`}>{categoryItem.categoryName}</Link>
 
                             {
                                 this.generateFavicons(categoryItem.categoryItems)
@@ -77,6 +77,11 @@ export default class MobileMenu extends Component {
         )
     }
 
+    _handleClickMenu(event) {
+        console.log("porcodio", event.target.id.toLowerCase().replace(' ', '-'));
+        this.props.toggleMenu();
+    }
+
 	render( { isMobile, listFeedData, showMenu }, { test }) {
         
         //do not render on desktop
@@ -84,7 +89,7 @@ export default class MobileMenu extends Component {
         
         //menu logic
         let menuStyles;
-        console.log(showMenu)
+        // console.log(showMenu)
         if (showMenu === null) {
             menuStyles = style.mobilemenu
         }

@@ -49,9 +49,12 @@ const ListsFeed = (props) => {
 	const buildListFeed = (listFeedData) => {
 		let feedCards = listFeedData.map( (card, i) => {
 			// console.log("[*]", card, i); //debug
+			//format the id of the list card
+			const cardID = card.categoryName.toLowerCase().replace(' ', '-');
 			return (
 				<Cell width={12}>
-					<List>
+					<div class={style.anchorPoint} id={cardID} />
+					<List >
 						<ListHeader title={card.categoryName} subtitle={card.categorySubtitle} />
 						{buildLinkList(card.categoryItems)}
 					</List>

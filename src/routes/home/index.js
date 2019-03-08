@@ -45,6 +45,7 @@ export default class Home extends Component {
 			this.setState({ faqData });
 		})
 	}
+	
 
 	// gets called when this route is navigated to
 	componentDidMount() {
@@ -54,7 +55,7 @@ export default class Home extends Component {
 		this.getFaqDataApi();
 	}
 
-	render( { isMobile, showMenu }, { test, listData, faqData }) {
+	render( { isMobile, showMenu, toggleMenu }, { test, listData, faqData }) {
 		//loading prompt
 		if (listData === null) {
 			return (
@@ -64,7 +65,7 @@ export default class Home extends Component {
 
 		return (
 		<div class={style.home}>
-			<MobileMenu showMenu={showMenu} listFeedData={listData} isMobile={isMobile} />
+			<MobileMenu showMenu={showMenu} toggleMenu={toggleMenu} listFeedData={listData} isMobile={isMobile} />
 			<SearchBar isMobile={isMobile} />
 			<ListsFeed listFeedData={listData} isMobile={isMobile} />
 			<HomeFaq faqData={faqData} isMobile={isMobile} />
