@@ -17,7 +17,8 @@ const SubHeader = (props) => {
 							if (matches) {
 								return ( <p class={style.subHdTxt} >Bookmark this website!</p> )
 							} else {
-								return ( <div class={style.subHdTxt}> <a class={style.backToPage} href="/">Homepage</a> <span class={style.hierarchySymb}>&gt;</span> {window.location.pathname.split('/')[2]} </div> )
+								let sublocation = window.location.pathname.split('/')[2].replace(/-/g, ' ');
+								return ( <div class={style.subHdTxt}> <a class={style.backToPage} href="/">Homepage</a> <span class={style.hierarchySymb}>&gt;</span> {sublocation[0].toUpperCase() + sublocation.slice(1)} </div> )
 							}
 					}
 					}

@@ -33,7 +33,7 @@ const ListsFeed = (props) => {
 						aria-label={`${listItem.domain} description`}
 						aria-hidden={false}
 					>
-						<a class={style.goToReview} href={`/review/${listItem.domain.split('.')[0]}`}>🔎</a>
+						<a class={style.goToReview} href={`/review/${listItem.name.replace(/ /g, '-').toLowerCase()}`}>🔎</a>
 					</span>
 					</div>
 				</ListItem>

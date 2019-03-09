@@ -1,4 +1,25 @@
-/* .home {
+.reviewPage {
 	min-height: 100%;
 	width: 100%;
-} */
+}
+
+.titlesCont {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+.websiteTitle {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.websiteSubtitle {
+	font-size: 1.2rem;
+	color: grey;
+	margin-top: 0;
+}
+
+.websiteImg {
+	width: 80%;
+}

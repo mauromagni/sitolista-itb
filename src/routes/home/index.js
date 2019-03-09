@@ -17,8 +17,8 @@ import MobileMenu from '../../components/mobilemenu';
 import style from './style';
 
 //DEV ONLY -- fake api call
-import listData from '../../data/mockdata.json';
-import faqData from '../../data/mockfaq.json';
+import fakeApi from '../../utils/api';
+
 
 export default class Home extends Component {
 
@@ -33,7 +33,7 @@ export default class Home extends Component {
 	getListDataApi() {
 		//simulate api call time
 		setTimeout( () => {
-			this.setState({ listData });
+			this.setState({ listData: fakeApi.returnFullListData() });
 		}, 1000 );
 
 	}
@@ -42,7 +42,7 @@ export default class Home extends Component {
 	getFaqDataApi() {
 		//simulate api call time
 		setTimeout( () => {
-			this.setState({ faqData });
+			this.setState({ faqData: fakeApi.returnFullFaqData() });
 		})
 	}
 	
