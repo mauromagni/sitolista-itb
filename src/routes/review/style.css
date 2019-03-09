@@ -20,6 +20,51 @@
 	margin-top: 0;
 }
 
+.websiteImgCnt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 85vw;
+	border: 4px gray solid;
+}
+
 .websiteImg {
-	width: 80%;
+	height: 300px;
+	object-fit: cover;
+	object-position: 0 0;
+	width: stretch;
+}
+
+.fakeBrowserHead {
+	width: 85vw;
+	background-color: lightgray;
+	height: 8vh;
+	width: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.fakeBrowserBarFavi {
+	padding: 5px;
+	border: 2px black solid;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.fakeBrowserBar {
+	font-size: 0.9rem;
+	color: gray;
+}
+
+.loadingScreenshot {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

@@ -104,7 +104,7 @@ export default class MobileMenu extends Component {
                     HOMEPAGE
                 </div>
                 <div class={style.goToHomepage}>
-                    <span style={{fontSize: '2rem'}}>🏠</span><Link class={style.homeLink} href="/">{window.location.hostname.toUpperCase()}</Link>
+                    <span style={{fontSize: '2rem'}}>🏠</span><Link onClick={(e) => this._handleClickMenu(e)} class={style.homeLink} href="/">{window.location.hostname.toUpperCase()}</Link>
                 </div>
                 <div class={style.goToHomepageTitle}>
                     CATEGORIES
