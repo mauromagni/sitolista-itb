@@ -179,14 +179,14 @@ export default class Review extends Component {
 					</div>
 					<div class={style.backToHome}>
 					<span
-									class={style.infoEmoji}
+									class={style.homeEmoji}
 									role="img"
 									aria-label={`more information icon for ${websiteData.domain}`}
 									aria-hidden={false}
 								>
 									🏠
 								</span>
-								<Link href="/" class={style.backToHomeLink}>  &lt; &lt; BACK TO HOME</Link>
+								<Link href="/" class={style.backToHomeLink}>BACK TO HOMEPAGE</Link>
 					</div>
 				</div>
 			)

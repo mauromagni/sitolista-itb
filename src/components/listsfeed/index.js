@@ -39,8 +39,11 @@ const ListsFeed = (props) => {
 				</ListItem>
 			)
 		})
+		//get random #
+		let ymeasures = [200, 300, 250];
+		let measure = ymeasures[Math.floor(Math.random()*ymeasures.length)];
 		return (
-			<ListSection>
+			<ListSection style={{maxHeight: measure, overflowY: 'scroll'}} >
 				{ linkList }
 			</ListSection>
 		)

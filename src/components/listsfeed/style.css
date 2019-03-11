@@ -6,6 +6,10 @@
     margin-left: 5vw;
 }
 
+.listCompo {
+    max-height: 200px;
+}
+
 .listItemDiv {
     display: flex;
     flex-direction: row;
