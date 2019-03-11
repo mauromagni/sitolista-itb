@@ -27,8 +27,8 @@ const SubHeader = (props) => {
 		);
 	  } else {
 		return (
-            <div>
-                <p>Desktop Subheader Annoucement Here</p>
+            <div class={style.desktopCont}>
+                <text class={style.desktopText}>Welcome to the Desktop version! Press CMD + D to Bookmark these golden nuggets!</text>
             </div>
 		);
 	}
