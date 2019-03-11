@@ -34,3 +34,40 @@
 .menuBtnIcon {
 	width: 2.2rem;
 }
+
+
+/*
+	DESKTOP ##############################
+*/
+
+.headerDesk {
+	background-color: #f3f3f3;
+	height: 25vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.bigDeskBanner {
+	margin: 0;
+	height: 18vh;
+	font-size: 3rem;
+}
+
+.headerTxtCnt {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.dskHeaderQuest {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.dskHeaderPara {
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-top: 5px;
+}

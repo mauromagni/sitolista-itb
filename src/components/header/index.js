@@ -6,6 +6,7 @@ import style from './style';
 import openMenu from '../../assets/img/menu3d.svg';
 import closeMenu from '../../assets/img/stop.svg';
 import homeButton from '../../assets/img/homepage.svg';
+import desktopLogo from '../../assets/img/titolone1.png'
 
 const Header = (props) => {
 	
@@ -65,13 +66,14 @@ const Header = (props) => {
 			</header>
 		);
 	  } else {
+		//DESKTOP VERSIOOON
 		return (
-			<header class={style.header}>
-				<h1>Big Desktop Banner Here</h1>
-				<nav>
-					<Link activeClassName={style.active} href="/">Home</Link>
-					<Link activeClassName={style.active} href="/profile">Me</Link>
-					<Link activeClassName={style.active} href="/profile/john">John</Link>
+			<header class={style.headerDesk}>
+				{/* <h1 class={style.bigDeskBanner}>DIRECTORYWEBSITE</h1> */}
+				<img src={desktopLogo} class={style.bigDeskBanner}>DIRECTORYWEBSITE.COM</img>
+				<nav class={style.headerTxtCnt}>
+					<text class={style.dskHeaderQuest}>Tired of searching for niche-related websites?</text>
+					<text class={style.dskHeaderPara}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </text>
 				</nav>
 			</header>
 		);
