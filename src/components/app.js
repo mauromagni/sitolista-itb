@@ -57,17 +57,33 @@ export default class App extends Component {
 
 	handleResponsive = () => {
 		const { width } = this.state;
-		const isMobile = width <= 600;
+		const isMobile = width <= 769;
 		return isMobile;
 	}
 
 	render() {
 		const appStyles = {overflow: 'scroll', tapHighlightColor: 'transparent'}
 		const isMobile = this.handleResponsive();
+		//build headers
+		let headings;
+		if (isMobile) {
+			headings = (
+				<div>
+					<Header showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} />
+					<SubHeader isMobile={isMobile} />
+				</div>
+			)
+		} else {
+			headings = (
+				<div>
+				<SubHeader isMobile={isMobile} />
+				<Header showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} />
+			</div>
+			)
+		}
 		return (
 			<div style={appStyles} id="app">
-				<Header showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} />
-				<SubHeader isMobile={isMobile} />
+				{headings}
 				<Router onChange={this.handleRoute}>
 					<Home showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} path="/" />
 					<Profile isMobile={isMobile} path="/profile/" user="me" />

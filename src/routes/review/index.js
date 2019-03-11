@@ -44,7 +44,6 @@ export default class Review extends Component {
 		const updateAppState = this.updateAppState;
 		const self = this;
 		//call
-		console.log("PROPI", this.props)
 		axios.get(`https://www.googleapis.com/pagespeedonline/v1/runPagespeed?screenshot=true&strategy=mobile&url=${url}`)
 		.then(function (response) {
 			// handle success
@@ -88,9 +87,7 @@ export default class Review extends Component {
 		} else {
 			bulletStyle =  style.bulletCON;
 		}
-		console.log("bulletstyle:", bulletStyle);
 		let bullets = listData.map( (listItem, i) => {
-			console.log("item", listItem);
 			return (
 				<li class={bulletStyle} key={i}>{listItem}</li>
 			)
