@@ -13,3 +13,30 @@
 	border: 1px black solid;
 	font-size: 0.8rem;
 }
+
+/* 
+	DESKTOP #########################################
+*/
+
+.dskSearchCnt {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.searchBarDesktop {
+	padding: 8px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+	margin-left: 2vh;
+	border: 1px black solid;
+	font-size: 0.8rem;
+}
+
+.updatedText {
+	font-size: 0.9rem;
+	margin-top: 10px;
+	margin-right: 2vh;
+}
