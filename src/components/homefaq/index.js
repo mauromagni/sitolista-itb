@@ -30,6 +30,7 @@ const HomeFaq = (props) => {
 		return (
 			<div class={style.mobileFaqCont}>
                 <div>
+                    <hr /> 
                     {buildFaq(faqData)}
                 </div>
             </div>
@@ -37,7 +38,8 @@ const HomeFaq = (props) => {
 	  } else {
 		return (
 			<div class={style.dsktopFaqCont}>
-				<p>faq Desktop</p>
+                <hr /> 
+				{buildFaq(faqData)}
 			</div>
 		);
 	}
