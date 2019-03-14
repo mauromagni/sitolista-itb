@@ -27,16 +27,17 @@
 
 
 .searchBarDesktop {
-	padding: 8px;
+	padding: 5px;
+    width: 30vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
-	margin-left: 2vh;
-	border: 1px black solid;
+    margin-left: 2vh;
+	border: 1px gray solid;
 	font-size: 0.8rem;
 }
 
 .updatedText {
 	font-size: 0.9rem;
-	margin-top: 10px;
+	margin-top: 2vh;
 	margin-right: 2vh;
 }
