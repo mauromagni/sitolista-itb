@@ -21,6 +21,11 @@
     margin-left: 5vw;
 }
 
+.singleLinkDeskt {
+    margin-left: 2vw;
+    font-size: 1.55vw;
+}
+
 .reviewLink {
     align-self: flex-end;
 }
@@ -42,3 +47,32 @@
 .goToReview {
     text-decoration: none;
 }
+
+/*  =================
+===================== DESKTOP
+=================  */ 
+
+.desktopListFeedContainer {
+    width: 95vw;
+    margin-left: 3vw;   
+}
+
+.desktopListHeader {
+    font-size: 2vw;
+}
+
+.desktopListSubheader {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.desktopListFeedContainer ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.4vw;
+  }
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #a9a9a9;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }

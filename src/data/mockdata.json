@@ -248,5 +248,112 @@
                 ]
             }
         ]
+    },
+    {
+        "categoryName": "Category Four",
+        "categorySubtitle": "Th fourth category, the more the better! what did u even expect man?",
+        "categoryEmoji": "🚀",
+        "categoryItems": [
+            {
+                "name": "Goldman Sachs",
+                "domain": "gs.com",
+                "url": "https://example.com",
+                "description": "a review of this website, however you wanna write it",
+                "pro": [
+                    "good stuff",
+                    "pretty vibes",
+                    "ottimo blog"
+                ],
+                "contro": [
+                    "no bueno man",
+                    "no woman no cry",
+                    "another bad bad reason here"
+                ]
+            },
+            {
+                "name": "Tradingview",
+                "domain": "tradingview.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "Bitcoin Foundation",
+                "domain": "bitcoin.org",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "instagram",
+                "domain": "instagram.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "Ebay",
+                "domain": "ebay.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "BitcoinTalk",
+                "domain": "bitcointalk.org",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            },
+            {
+                "name": "UltimateGuitar",
+                "domain": "ultimate-guitar.com",
+                "url": "https://example.com",
+                "description": "come write a new decription with better words and phrases n stuff no?",
+                "pro": [
+                    "again good vibes",
+                    "wonderful ambient"
+                ],
+                "contro": [
+                    "sito lento",
+                    "bad customer service"
+                ]
+            }
+        ]
     }
 ]

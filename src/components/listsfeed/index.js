@@ -23,7 +23,7 @@ const ListsFeed = (props) => {
 							inline
 							rounded
 						/>
-						<a target="_blank" class={style.singleLink} href={listItem.url}>{listItem.name}</a>
+						<a target="_blank" class={isMobile ? style.singleLink : style.singleLinkDeskt} href={listItem.url}>{listItem.name}</a>
 						
 					</div>
 					<span
@@ -40,10 +40,18 @@ const ListsFeed = (props) => {
 			)
 		})
 		//get random #
-		let ymeasures = [200, 300, 250];
-		let measure = ymeasures[Math.floor(Math.random()*ymeasures.length)];
+		let ymeasures, sectStyle, measure;
+		if (isMobile) {
+			ymeasures = [200, 300, 250];
+			measure = ymeasures[Math.floor(Math.random()*ymeasures.length)];
+			sectStyle = {maxHeight: measure, overflowY: 'scroll'}
+		} else {
+			ymeasures = [250];
+			measure = ymeasures[Math.floor(Math.random()*ymeasures.length)];
+			sectStyle = {height: measure, overflowY: 'scroll'}
+		}
 		return (
-			<ListSection style={{maxHeight: measure, overflowY: 'scroll'}} >
+			<ListSection style={sectStyle} >
 				{ linkList }
 			</ListSection>
 		)
@@ -71,6 +79,28 @@ const ListsFeed = (props) => {
 		)
 	}
 
+	//DESKTOP methods
+	const buildDesktopListFeed = (listFeedData) => {
+		let desktopCards = listFeedData.map( (card, i) => {
+			//format the id of the list card
+			const cardID = card.categoryName.toLowerCase().replace(' ', '-');
+			return (
+				<Cell key={i} width={4}>
+					<div class={style.anchorPoint} id={cardID} />
+					<List >
+						<ListHeader custom={(<div><h1 class={style.desktopListHeader}>{`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}</h1><h2 class={style.desktopListSubheader}>Here i write a description che non lo so non lo so dai dimmi</h2></div>)} style={{textAlign: 'center'}} title={`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}  />
+						{buildLinkList(card.categoryItems)}
+					</List>
+				</Cell>
+			)
+		})
+		return (
+			<Grid gap="10px" columns={12}>
+				{ desktopCards }
+			</Grid>
+		)
+	}
+
 	if (isMobile) {
 		return (
 			<div class={style.mobileListFeedContainer}>
@@ -79,7 +109,9 @@ const ListsFeed = (props) => {
 		);
 	  } else {
 		return (
-			<h2>desktop version todo</h2>
+			<div class={style.desktopListFeedContainer}>
+					{ buildDesktopListFeed(listFeedData)}
+			</div>
 		);
 	}
 }
