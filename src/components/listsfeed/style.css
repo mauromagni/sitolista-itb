@@ -67,12 +67,12 @@
 }
 
 .desktopListFeedContainer ::-webkit-scrollbar {
-    -webkit-appearance: none;
+    appearance: none;
     width: 0.4vw;
   }
   
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #a9a9a9;
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
   }
