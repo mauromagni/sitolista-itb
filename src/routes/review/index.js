@@ -103,12 +103,14 @@ export default class Review extends Component {
 	render( { isMobile, link }, { websiteData, websiteScreenshot }) {
 		//loading prompt
 		console.log("[*] Page State: ", this.state)
+
+		if (websiteData === null) {
+			return (
+				<h1>LOADING...</h1>
+			)
+		}
+		
 		if (isMobile) {
-			if (websiteData === null) {
-				return (
-					<h1>LOADING...</h1>
-				)
-			}
 
 			return (
 				<div class={style.reviewPage}>
@@ -189,7 +191,13 @@ export default class Review extends Component {
 			)
 		} else {
 			return (
-				<p>portocio</p>
+				<div class={style.globalDeskCont}>
+					<div class={style.desktitles}>
+					<h1 class={style.websiteTitleDesk}>{websiteData.name}</h1>
+					<h2 class={style.websiteSubtitleDesk}>{websiteData.domain}</h2>
+					</div>
+
+				</div>
 			)
 		}
 	}

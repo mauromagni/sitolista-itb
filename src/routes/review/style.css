@@ -142,6 +142,27 @@
 	
 }
 
-.homeEmoji {
+/* 
+====================== DESKTOP
+*/
+
+.globalDeskCont {
+	display: flex;
+	flex-direction: column;	
+}	
+
+.desktitles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.websiteTitleDesk {
+	margin-bottom: 0;
+}
+
+.websiteSubtitleDesk {
+	margin-top: 0;
+	color: grey;
 
 }
