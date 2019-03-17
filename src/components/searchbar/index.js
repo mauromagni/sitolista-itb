@@ -42,6 +42,7 @@ const SearchBar = (props) => {
                     type="text"
                     placeholder="Searchbar component"
 								/>
+								<p>Click on the ICON to see reviews!</p>
 								<p class={style.updatedText}>Updated on <strong>{getTodayDate()}</strong></p>
             </div>
 		);

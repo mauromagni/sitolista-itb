@@ -187,6 +187,10 @@ export default class Review extends Component {
 					</div>
 				</div>
 			)
+		} else {
+			return (
+				<p>portocio</p>
+			)
 		}
 	}
 }

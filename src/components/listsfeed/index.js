@@ -61,7 +61,7 @@ const ListsFeed = (props) => {
 		let feedCards = listFeedData.map( (card, i) => {
 			// console.log("[*]", card, i); //debug
 			//format the id of the list card
-			const cardID = card.categoryName.toLowerCase().replace(' ', '-');
+			const cardID = card.categoryName.toLowerCase().replace(/ /g, '-');
 			return (
 				<Cell width={12}>
 					<div class={style.anchorPoint} id={cardID} />
@@ -83,7 +83,7 @@ const ListsFeed = (props) => {
 	const buildDesktopListFeed = (listFeedData) => {
 		let desktopCards = listFeedData.map( (card, i) => {
 			//format the id of the list card
-			const cardID = card.categoryName.toLowerCase().replace(' ', '-');
+			const cardID = card.categoryName.toLowerCase().replace(/ /g, '-');
 			return (
 				<Cell key={i} width={4}>
 					<div class={style.anchorPoint} id={cardID} />

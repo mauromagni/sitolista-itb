@@ -51,7 +51,7 @@ export default class MobileMenu extends Component {
 
         mobMenuList = listFeedData.map(
             (categoryItem, i ) => {
-                let cateID = categoryItem.categoryName.toLowerCase().replace(' ', '-');
+                let cateID = categoryItem.categoryName.toLowerCase().replace(/ /g, '-');
                 return (
                     <li key={`category-${i}`} class={i % 2 === 0 ? style.category1 : style.category2 }>
                         <span class={style.categoryEmojiMob}>
