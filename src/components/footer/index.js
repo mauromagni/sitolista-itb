@@ -15,7 +15,7 @@ const Footer = (props) => {
 	  } else {
 		return (
 			<footer class={style.footerContainerDesk}>
-			<hr></hr>
+				<hr class={style.footerLineSeparator}></hr>
 				<p class={style.footerCopyText}>© 2019 directoryWebsite - Reviews The Best Sites! 👍🏼</p>
 			</footer>
 		);

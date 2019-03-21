@@ -5,7 +5,7 @@ import faqdata from "../data/mockfaq.json"
 const apiFake = {
     returnFullListData: () => mockdata,
     returnFullFaqData: () => faqdata,
-    returnWebsiteData: (websiteName) => {
+    returnWebsiteData: (websiteName) => { //or (websiteID)
         let found = 0;
         let websiteData = null;
         for (let i = 0; i < mockdata.length; i++) {

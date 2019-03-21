@@ -233,7 +233,48 @@ export default class Review extends Component {
 								{websiteData.description}
 							</p>
 						</div>
+					</div>
+					<div class={style.deskProConsCont}>
+						<div class={style.deskPros}>
+							<h3 class={style.proConSubtl}>
+								PROs
+								<span
+									class={style.infoEmoji}
+									role="img"
+									aria-label={`more information icon for ${websiteData.domain}`}
+									aria-hidden={false}
+								>
+									✅
+								</span>
+							</h3>
+							{this.generateProCons(websiteData.pro, 'pro')}
+						</div>
+						<div class={style.deskCons}>
+							<h3 class={style.proConSubtl}>
+							CONs
+								<span
+									class={style.infoEmoji}
+									role="img"
+									aria-label={`more information icon for ${websiteData.domain}`}
+									aria-hidden={false}
+								>
+									❌
+								</span>
+							</h3>
+							{this.generateProCons(websiteData.pro, 'con')}
+						</div>
 					</div>	
+					<div class={style.deskBackToHome}>
+					<span
+									class={style.homeEmoji}
+									role="img"
+									aria-label={`more information icon for ${websiteData.domain}`}
+									aria-hidden={false}
+								>
+									🏠
+								</span>
+								<Link href="/" class={style.backToHomeLink}>BACK TO HOMEPAGE</Link>
+					</div>
 
 				</div>
 			)

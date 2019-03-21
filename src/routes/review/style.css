@@ -194,3 +194,36 @@
 	margin-bottom: 1vh;
 	margin-top: 0;
 }
+
+.deskProConsCont {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2vh;
+	margin-bottom: 5vh;
+}
+
+.deskPros {
+	width: 44vw;
+	margin-right: 1vw;
+}
+
+.deskCons {
+	width: 44vw;
+	margin-left: 1vw;
+}
+
+.deskBackToHome {
+	width: 100vw;
+	margin-top: 5vh;
+	background-color: lightgrey;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+	padding-left: 5vw;
+	font-weight: bold;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+

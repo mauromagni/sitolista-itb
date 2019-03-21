@@ -17,3 +17,7 @@
 .footerContainerDesk {
     text-align: center;
 }
+
+.footerLineSeparator {
+    margin-top: 0;
+}
