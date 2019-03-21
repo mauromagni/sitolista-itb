@@ -149,6 +149,7 @@
 .globalDeskCont {
 	display: flex;
 	flex-direction: column;	
+	align-items: center;
 }	
 
 .desktitles {
@@ -165,4 +166,31 @@
 	margin-top: 0;
 	color: grey;
 
+}
+
+.deskReviewCont {
+	width: 90vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.deskWebsiteImgCnt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 44vw;
+	border: 3px gray solid;
+	margin-right: 1vw;
+}
+
+.reviewTextCont {
+	width: 44vw;
+	margin-left: 1vw;
+}
+
+.reviewSubtitleDesk {
+	font-size: 1.4rem;
+	margin-bottom: 1vh;
+	margin-top: 0;
 }

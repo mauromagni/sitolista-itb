@@ -40,11 +40,17 @@ export default class Review extends Component {
 	}
 
 	getWebsiteThumb(url) {
+		let format;
+		if (this.props.isMobile) {
+			format = 'mobile'
+		} else {
+			format = 'desktop'
+		}
 		//set vars params
 		const updateAppState = this.updateAppState;
 		const self = this;
 		//call
-		axios.get(`https://www.googleapis.com/pagespeedonline/v1/runPagespeed?screenshot=true&strategy=mobile&url=${url}`)
+		axios.get(`https://www.googleapis.com/pagespeedonline/v1/runPagespeed?screenshot=true&strategy=${format}&url=${url}`)
 		.then(function (response) {
 			// handle success
 			// console.log(response.data); //debug
@@ -109,7 +115,7 @@ export default class Review extends Component {
 				<h1>LOADING...</h1>
 			)
 		}
-		
+		console.log(websiteData)
 		if (isMobile) {
 
 			return (
@@ -193,9 +199,41 @@ export default class Review extends Component {
 			return (
 				<div class={style.globalDeskCont}>
 					<div class={style.desktitles}>
-					<h1 class={style.websiteTitleDesk}>{websiteData.name}</h1>
-					<h2 class={style.websiteSubtitleDesk}>{websiteData.domain}</h2>
+						<h1 class={style.websiteTitleDesk}>{websiteData.name}</h1>
+						<h2 class={style.websiteSubtitleDesk}>{websiteData.domain}</h2>
 					</div>
+					<div class={style.deskReviewCont}>
+						<div class={style.deskWebsiteImgCnt} >
+							<div class={style.fakeBrowserHead}>
+								<div class={style.fakeBrowserBarFavi}>
+								<Image
+									src={`https://www.google.com/s2/favicons?domain=${websiteData.domain}`}
+									style={{height: 16, width: 16, marginRight: 5}}
+									inline
+									rounded
+								/>
+								<div class={style.fakeBrowserBar}>{websiteData.url}</div>
+								</div>
+							</div>
+							{this.placeScreenshot(websiteScreenshot)}
+						</div>
+						<div class={style.reviewTextCont}>
+							<h3 class={style.reviewSubtitleDesk}>
+								Review
+								<span
+									class={style.infoEmoji}
+									role="img"
+									aria-label={`more information icon for ${websiteData.domain}`}
+									aria-hidden={false}
+								>
+									ℹ️
+								</span>
+							</h3>
+							<p class={style.deskWebsiteReviewTxt}>
+								{websiteData.description}
+							</p>
+						</div>
+					</div>	
 
 				</div>
 			)
