@@ -109,7 +109,7 @@
 
 .reviewBullets {
 	list-style-type: none;
-	width: 82vw;
+	/* width: 82vw; */
 	text-decoration: none;
 	margin-bottom: 0;
 }
@@ -142,9 +142,9 @@
 	
 }
 
-/* 
+/* ======================
 ====================== DESKTOP
-*/
+*/ 
 
 .globalDeskCont {
 	display: flex;
@@ -203,11 +203,15 @@
 }
 
 .deskPros {
+	display: flex;
+	flex-direction: column;
 	width: 44vw;
 	margin-right: 1vw;
 }
 
 .deskCons {
+	display: flex;
+	flex-direction: column;
 	width: 44vw;
 	margin-left: 1vw;
 }
@@ -227,3 +231,8 @@
 	justify-content: center;
 }
 
+.deskClickHereLink {
+	padding-top: 10px;
+	font-size: 1.2rem;
+    font-weight: bold;
+}

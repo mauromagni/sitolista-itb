@@ -220,18 +220,11 @@ export default class Review extends Component {
 						<div class={style.reviewTextCont}>
 							<h3 class={style.reviewSubtitleDesk}>
 								Review
-								<span
-									class={style.infoEmoji}
-									role="img"
-									aria-label={`more information icon for ${websiteData.domain}`}
-									aria-hidden={false}
-								>
-									ℹ️
-								</span>
 							</h3>
 							<p class={style.deskWebsiteReviewTxt}>
 								{websiteData.description}
 							</p>
+							<Link class={style.deskClickHereLink} target="_blank" href={websiteData.url}>Click Here to Visit Website</Link>
 						</div>
 					</div>
 					<div class={style.deskProConsCont}>
@@ -266,14 +259,14 @@ export default class Review extends Component {
 					</div>	
 					<div class={style.deskBackToHome}>
 					<span
-									class={style.homeEmoji}
-									role="img"
-									aria-label={`more information icon for ${websiteData.domain}`}
-									aria-hidden={false}
-								>
-									🏠
-								</span>
-								<Link href="/" class={style.backToHomeLink}>BACK TO HOMEPAGE</Link>
+						class={style.homeEmoji}
+						role="img"
+						aria-label={`more information icon for ${websiteData.domain}`}
+						aria-hidden={false}
+					>
+						🏠
+					</span>
+					<Link href="/" class={style.backToHomeLink}>BACK TO HOMEPAGE</Link>
 					</div>
 
 				</div>

@@ -27,22 +27,24 @@ const SearchBar = (props) => {
 	if (isMobile) {
 		return (
 			<div id="yo" class={style.searchBarCont}>
-				<input
+				{/* <input
                     class={style.searchBar}
                     type="text"
                     placeholder="Searchbar component"
-				/>
+				/> */}
 			</div>
 		);
 	  } else {
 		return (
             <div class={style.dskSearchCnt}>
+								{/* 
                 <input
                     class={style.searchBarDesktop}
                     type="text"
                     placeholder="Searchbar component"
 								/>
-								<p>Click on the ICON to see reviews!</p>
+								*/}
+								<p class={style.clickIconForRev}>Click on the <span>🔎</span>to see reviews!</p>
 								<p class={style.updatedText}>Updated on <strong>{getTodayDate()}</strong></p>
             </div>
 		);
