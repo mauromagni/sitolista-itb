@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     margin-left: 5vw;
+    overflow: hidden;
+
 }
 
 .listCompo {
@@ -19,11 +21,13 @@
 
 .singleLink {
     margin-left: 5vw;
+    line-height: 1.1rem;
 }
 
 .singleLinkDeskt {
     margin-left: 2vw;
     font-size: 1.55vw;
+    line-height: 1.2rem;
 }
 
 .reviewLink {

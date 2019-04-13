@@ -88,7 +88,7 @@ const ListsFeed = (props) => {
 				<Cell key={i} width={4}>
 					<div class={style.anchorPoint} id={cardID} />
 					<List >
-						<ListHeader custom={(<div><h1 class={style.desktopListHeader}>{`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}</h1><h2 class={style.desktopListSubheader}>Here i write a description che non lo so non lo so dai dimmi</h2></div>)} style={{textAlign: 'center'}} title={`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}  />
+						<ListHeader custom={(<div><h1 class={style.desktopListHeader}>{`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}</h1><h2 class={style.desktopListSubheader}>{card.categorySubtitle}</h2></div>)} style={{textAlign: 'center'}} title={`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}  />
 						{buildLinkList(card.categoryItems)}
 					</List>
 				</Cell>
