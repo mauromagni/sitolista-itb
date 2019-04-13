@@ -132,7 +132,7 @@ export default class Review extends Component {
 									inline
 									rounded
 								/>
-								<div class={style.fakeBrowserBar}>{websiteData.url}</div>
+								<div class={style.fakeBrowserBar}>{websiteData.url.slice(0,35)}</div>
 								</div>
 							</div>
 							{this.placeScreenshot(websiteScreenshot)}
