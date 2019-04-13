@@ -178,7 +178,7 @@ export default class Review extends Component {
 									❌
 								</span>
 							</h3>
-							{this.generateProCons(websiteData.pro, 'con')}
+							{this.generateProCons(websiteData.contro, 'con')}
 						</div>
 
 					</div>
@@ -212,7 +212,7 @@ export default class Review extends Component {
 									inline
 									rounded
 								/>
-								<div class={style.fakeBrowserBar}>{websiteData.url}</div>
+								<div class={style.fakeBrowserBar}>{websiteData.url.slice(0,60)}</div>
 								</div>
 							</div>
 							{this.placeScreenshot(websiteScreenshot)}
@@ -254,7 +254,7 @@ export default class Review extends Component {
 									❌
 								</span>
 							</h3>
-							{this.generateProCons(websiteData.pro, 'con')}
+							{this.generateProCons(websiteData.contro, 'con')}
 						</div>
 					</div>	
 					<div class={style.deskBackToHome}>
