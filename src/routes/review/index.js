@@ -122,7 +122,7 @@ export default class Review extends Component {
 				<div class={style.reviewPage}>
 					<div class={style.titlesCont}>
 						<h1 class={style.websiteTitle}>{websiteData.name}</h1>
-						<h2 class={style.websiteSubtitle}>{websiteData.domain}</h2>
+						<h2 class={style.websiteSubtitle}>{websiteData.domain.split("/")[0]}</h2>
 						<div class={style.websiteImgCnt} >
 							<div class={style.fakeBrowserHead}>
 								<div class={style.fakeBrowserBarFavi}>
@@ -200,7 +200,7 @@ export default class Review extends Component {
 				<div class={style.globalDeskCont}>
 					<div class={style.desktitles}>
 						<h1 class={style.websiteTitleDesk}>{websiteData.name}</h1>
-						<h2 class={style.websiteSubtitleDesk}>{websiteData.domain}</h2>
+						<h2 class={style.websiteSubtitleDesk}>{websiteData.domain.split("/")[0]}</h2>
 					</div>
 					<div class={style.deskReviewCont}>
 						<div class={style.deskWebsiteImgCnt} >
@@ -212,7 +212,7 @@ export default class Review extends Component {
 									inline
 									rounded
 								/>
-								<div class={style.fakeBrowserBar}>{websiteData.url.slice(0,60)}</div>
+								<div class={style.fakeBrowserBar}>{websiteData.url.slice(0,35)}</div>
 								</div>
 							</div>
 							{this.placeScreenshot(websiteScreenshot)}

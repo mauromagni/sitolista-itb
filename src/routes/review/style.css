@@ -12,12 +12,14 @@
 .websiteTitle {
 	font-size: 1.6rem;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .websiteSubtitle {
 	font-size: 1.2rem;
 	color: grey;
 	margin-top: 0;
+	text-align: center;
 }
 
 .websiteImgCnt {
