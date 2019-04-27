@@ -16,8 +16,14 @@ import Review from '../routes/review'
 export default class App extends Component {
 	constructor() {
 		super();
+		let widthWin;
+		if (typeof window === "undefined") {
+			widthWin = 1000;
+		} else {
+			widthWin = window.innerWidth;
+		}
 		this.state = {
-		  width: window.innerWidth,
+		  width: widthWin,
 		  showMenu: null
 		};
 		console.log(api);
@@ -25,11 +31,15 @@ export default class App extends Component {
 
 	//adds resize listener
 	componentWillMount() {
-		window.addEventListener('resize', this.handleWindowSizeChange);
+		if (typeof window !== "undefined") {
+			window.addEventListener('resize', this.handleWindowSizeChange);
+		}
 	}
 	//removes resize listener
 	componentWillUnmount() {
-		window.removeEventListener('resize', this.handleWindowSizeChange);
+		if (typeof window !== "undefined") {
+			window.removeEventListener('resize', this.handleWindowSizeChange);
+		}
 	}
 
 	handleWindowSizeChange = () => {
