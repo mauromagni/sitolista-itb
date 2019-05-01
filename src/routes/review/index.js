@@ -138,7 +138,7 @@ export default class Review extends Component {
 							{this.placeScreenshot(websiteScreenshot)}
 						</div>
 						<div class={style.mainReviewContent}>
-							<Link class={style.clickHereLink} href={websiteData.url}>Click Here to Visit Website</Link>
+							<a class={style.clickHereLink} href={websiteData.url}>Click Here to Visit Website</a>
 							<h3 class={style.reviewSubtitle}>
 								Review
 								<span
@@ -224,7 +224,7 @@ export default class Review extends Component {
 							<p class={style.deskWebsiteReviewTxt}>
 								{websiteData.description}
 							</p>
-							<Link class={style.deskClickHereLink} target="_blank" href={websiteData.url}>Click Here to Visit Website</Link>
+							<a class={style.deskClickHereLink} target="_blank" href={websiteData.url}>Click Here to Visit Website</a>
 						</div>
 					</div>
 					<div class={style.deskProConsCont}>
