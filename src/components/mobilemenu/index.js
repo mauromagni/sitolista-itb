@@ -71,8 +71,9 @@ export default class MobileMenu extends Component {
         )
 
         return (
-            <ul>
+            <ul class={style.ulMenu}>
                 {mobMenuList}
+                <div class={style.spacerDiv} />
             </ul>
         )
     }

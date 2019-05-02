@@ -40,6 +40,14 @@
     animation: fade-me-out 1s forwards;
 }
 
+.ulMenu {
+    overflow-y: scroll;
+}
+
+.spacerDiv {
+    margin-bottom: 100px;
+}
+
 .goToHomepage {
     padding: 2vw;
     display: flex;
