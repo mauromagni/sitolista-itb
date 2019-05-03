@@ -32,6 +32,7 @@ const SearchBar = (props) => {
                     type="text"
                     placeholder="Searchbar component"
 				/> */}
+				<p class={style.clickIconForRev}>Click on the <span>🔎</span>to see reviews!</p>
 			</div>
 		);
 	  } else {
