@@ -95,9 +95,7 @@ export default class App extends Component {
 			<div style={appStyles} id="app">
 				{headings}
 				<Router onChange={this.handleRoute}>
-					<Home showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} path="/" />
-					<Profile isMobile={isMobile} path="/profile/" user="me" />
-					<Profile isMobile={isMobile} path="/profile/:user" />
+					<Home showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} isMobile={isMobile} exact path="/" />
 					<Review isMobile={isMobile} path="/review/:link" link="test" />
 				</Router>
 				<Footer isMobile={isMobile} />
