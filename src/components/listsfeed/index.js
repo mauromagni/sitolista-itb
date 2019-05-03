@@ -63,7 +63,7 @@ const ListsFeed = (props) => {
 			//format the id of the list card
 			const cardID = card.categoryName.toLowerCase().replace(/ /g, '-');
 			return (
-				<Cell width={12}>
+				<Cell width={12} style={{height: 'auto'}}>
 					<div class={style.anchorPoint} id={cardID} />
 					<List >
 						<ListHeader style={{textAlign: 'center'}} title={`${card.categoryEmoji} ${card.categoryName.toUpperCase()}`}  />
