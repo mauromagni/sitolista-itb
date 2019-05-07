@@ -1,5 +1,5 @@
-import fs from 'fs';
-import download from 'image-downloader';
+const fs = require('fs');
+const download = require('image-downloader');
 
 //read raw json file and parse it
 const rawdata = fs.readFileSync('src/data/websitesdata.json');
