@@ -91,7 +91,7 @@ export default class MobileMenu extends Component {
         let menuStyles;
         // console.log(showMenu)
         if (showMenu === null) {
-            menuStyles = style.mobilemenu
+            return
         }
         else if (showMenu === false) {
             menuStyles = style.mobilemenuout
