@@ -19,8 +19,7 @@ const ListsFeed = (props) => {
 					<div class={style.masterContainer}>
 					<div class={style.listItemDiv}>
 						<Image
-							src={`/assets/img/favicons/${normalizedName}.png`}
-							// src={faviconImg}
+							src={`https://www.google.com/s2/favicons?domain=${listItem.domain}`}							// src={faviconImg}
 							style={`height: 20px; width: 20px;`}
 							inline
 							rounded

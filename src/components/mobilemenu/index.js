@@ -32,8 +32,7 @@ export default class MobileMenu extends Component {
             const normalizedName = link.name.replace(/ /g, "-").toLowerCase();
             return (
             <Image
-            src={`/assets/img/favicons/${normalizedName}.png`}
-            style={{padding: '0.5vw'}}
+                src={`https://www.google.com/s2/favicons?domain=${listItem.domain}`}            style={{padding: '0.5vw'}}
                 inline
                 rounded
             />
