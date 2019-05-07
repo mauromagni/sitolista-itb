@@ -8,3 +8,6 @@ package-lock.json
 #other
 .DS_Store
 */DS_Store
+
+#favicon imgs
+/src/assets/img/favicons/*
