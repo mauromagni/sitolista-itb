@@ -13,12 +13,14 @@ const ListsFeed = (props) => {
 
 	const buildLinkList = (linkListData) => {
 		let linkList = linkListData.map( (listItem, i) => {
+			const normalizedName = listItem.name.replace(/ /g, "-").toLowerCase();
 			return (
 				<ListItem>
 					<div class={style.masterContainer}>
 					<div class={style.listItemDiv}>
 						<Image
-							src={`https://www.google.com/s2/favicons?domain=${listItem.domain}`}
+							src={`/assets/img/favicons/${normalizedName}.png`}
+							// src={faviconImg}
 							style={`height: 20px; width: 20px;`}
 							inline
 							rounded
