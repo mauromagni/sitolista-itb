@@ -6,7 +6,7 @@ const rawdata = fs.readFileSync('src/data/websitesdata.json');
 const websitesdata = JSON.parse(rawdata);  
 
 //counter variable
-let counter = 0
+let counter = 0;
 
 //loop thru the websites and download their favicons
 for (let i = 0; i < websitesdata.length ; i++) {
@@ -19,10 +19,13 @@ for (let i = 0; i < websitesdata.length ; i++) {
 
         download.image(options)
         .then(({ filename, image }) => {
-            console.log('File saved to', filename)
+            console.log('File saved to', filename);
         })
         .catch((err) => {
-            console.error(err)
+            console.error(err);
         })
+        counter +=1;
     });
 }
+
+console.log(`[*] ${counter} total favicons downloaded.`)
