@@ -16,7 +16,7 @@ import MobileMenu from '../../components/mobilemenu';
 //styles
 import style from './style';
 
-//DEV ONLY -- fake api call
+// -- fake api call
 import fakeApi from '../../utils/api';
 
 
@@ -31,10 +31,7 @@ export default class Home extends Component {
 	//util functions ----
 	//api call
 	getListDataApi() {
-		//simulate api call time
-		setTimeout( () => {
-			this.setState({ listData: fakeApi.returnFullListData() });
-		}, 1000 );
+		this.setState({ listData: fakeApi.returnFullListData() });
 
 	}
 
