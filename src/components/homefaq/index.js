@@ -9,7 +9,7 @@ const HomeFaq = (props) => {
 
     const buildFaq = (faqData) => {
         if (!faqData) {
-            return console.error("FAQDATA UNDEFINED")
+            return
         }
 
         return (
@@ -25,8 +25,8 @@ const HomeFaq = (props) => {
             </div>
         )
     }
-            //DEBUG **** ****** REFACTOR ***** DISPLAY MOCKfaq
-	if (isMobile) {
+
+    if (isMobile) {
 		return (
 			<div class={style.mobileFaqCont}>
                 <div>
