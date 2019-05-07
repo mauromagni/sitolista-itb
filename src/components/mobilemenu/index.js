@@ -29,10 +29,11 @@ export default class MobileMenu extends Component {
     generateFavicons(linkData) {
         let favicons;
         favicons = linkData.slice(0, 5).map( (link, i) => {
+            const normalizedName = link.name.replace(/ /g, "-").toLowerCase();
             return (
             <Image
-                src={`https://www.google.com/s2/favicons?domain=${link.domain}`}
-                style={{padding: '0.5vw'}}
+            src={`/assets/img/favicons/${normalizedName}.png`}
+            style={{padding: '0.5vw'}}
                 inline
                 rounded
             />
