@@ -1,14 +1,14 @@
 [
     {
-      "categoryName": "Category one",
-      "categorySubtitle": "Websites where you can buy stuff or do something else",
-      "categoryEmoji": "👑",
+      "categoryName": "BLOG",
+      "categorySubtitle": "I migliori Blog sul bartending",
+      "categoryEmoji": "✍🏻",
       "categoryItems": [
         {
-          "name": "PreactJS",
-          "domain": "preactjs.com",
-          "url": "https://preactjs.com",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tempus nisl, et lobortis ex. Nunc sit amet urna vel diam semper ultrices. Suspendisse lectus nibh, venenatis quis arcu a, viverra convallis metus. Aliquam aliquam a massa eu sollicitudin. In pellentesque feugiat mauris eget interdum. Nunc eu felis quis dui sollicitudin condimentum nec sit amet neque. Vivamus ullamcorper augue in massa ullamcorper viverra.",
+          "name": "italianbartender",
+          "domain": "italianbartender.com",
+          "url": "https://italianbartender.com",
+          "description": "italianbartender è un blog di mixology che fa paura. tipo cocktails e mille altri versi, numero uno di uno. De niro anche fa i versi con loro, roba assurda. Ecco il link.",
           "pro": [
             "prezzi buoni",
             "rispondono sempre alle mail",
@@ -20,254 +20,644 @@
           ]
         },
         {
-          "name": "Another Website",
-          "domain": "anotherlink.it",
-          "url": "https://preactjs.com",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tempus nisl, et lobortis ex. Nunc sit amet urna vel diam semper ultrices. Suspendisse lectus nibh, venenatis quis arcu a, viverra convallis metus. Aliquam aliquam a massa eu sollicitudin. In pellentesque feugiat mauris eget interdum. Nunc eu felis quis dui sollicitudin condimentum nec sit amet neque. Vivamus ullamcorper augue in massa ullamcorper viverra.",
+          "name": "Blueblazer",
+          "domain": "blueblazer.it",
+          "url": "http://www.blueblazer.it",
+          "description": "Sono famosi per la loro fantastica app che ti consiglia i migliori cocktail bar vicini a te, uso quella se non so cosa ho attorno a me, ad ora la migliore. il sito si vede che c'è del gran lavoro dietro peccato abbiano poca varietà di contenuti, probabilmente hanno altri obbiettivi, comunque riconosciuto come uin riferimento nel settore.",
           "pro": [
-            "spedizione veloce",
-            "negozio fisico"
+            "bel design",
+            "versione mobile top",
+            "hanno la loro app"
           ],
           "contro": [
-            "sito lento",
-            "servizio clienti pessimo"
+            "versione desktop confusa",
+            "varietà contenuti scarsa"
           ]
         },
         {
-          "name": "Npm Official Website",
-          "domain": "npmjs.com",
-          "url": "https://npm.com",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tempus nisl, et lobortis ex. Nunc sit amet urna vel diam semper ultrices. Suspendisse lectus nibh, venenatis quis arcu a, viverra convallis metus. Aliquam aliquam a massa eu sollicitudin. In pellentesque feugiat mauris eget interdum. Nunc eu felis quis dui sollicitudin condimentum nec sit amet neque. Vivamus ullamcorper augue in massa ullamcorper viverra.",
+          "name": "FlairAcademy",
+          "domain": "FlairAcademy",
+          "url": "https://www.flairacademy.it/blog/",
+          "description": "bei contenuti e bella penna.",
           "pro": [
-            "good design",
-            "cool content"
+            "sempre contenuti nuovi",
+            "bel sito"
           ],
           "contro": [
-            "slow site",
-            "no support for customers"
+            "andrebbe rinnovato il format"
           ]
         },
         {
-          "name": "CustomVolley",
-          "domain": "customvolley.com",
-          "url": "https://customvolley.com",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tempus nisl, et lobortis ex. Nunc sit amet urna vel diam semper ultrices. Suspendisse lectus nibh, venenatis quis arcu a, viverra convallis metus. Aliquam aliquam a massa eu sollicitudin. In pellentesque feugiat mauris eget interdum. Nunc eu felis quis dui sollicitudin condimentum nec sit amet neque. Vivamus ullamcorper augue in massa ullamcorper viverra.",
+          "name": "Barmanitalia",
+          "domain": "barmanitalia.it",
+          "url": "https://barmanitalia.it/",
+          "description": "Molto copleto come tipologia di articoli, adatto sia a neofiti che professionisti, hanno anche un gurppo whatsapp che è moolto attivo.",
           "pro": [
-            "good design",
-            "cool content",
-            "spedizione rapida"
+            "sempre contenuti nuovi",
+            "bel sito"
           ],
           "contro": [
-            "slow site",
-            "no support for customers"
+            "andrebbe rinnovato il format",
+            "video vecchi"
+          ]
+        },
+        {
+          "name": "Diventarebarman",
+          "domain": "diventarebarman.it",
+          "url": "https://www.diventarebarman.it/",
+          "description": "Se ti stai avvicinando al mondo della mixologia questo è uno dei siti giusto, molto scolastico, proprio per neofiti.",
+          "pro": [
+            "design obsoleto",
+            "fanno corsi"
+
+          ],
+          "contro": [
+            "un pò lento",
+            "pochi contenuti"
+          ]
+        },
+        {
+          "name": "Ilbarman",
+          "domain": "ilbarman.it",
+          "url": "https://ilbarman.com/",
+          "description": "sito con poche poche funzioni, quelle che ci troviamo sono particolari e molto dettagliate, pur non essendo un ecommerce da consigli per gli acquisti, collegato a ecommerce e-barman",
+          "pro": [
+            "Sito nuovo",
+            "guide agli acquisti"
+
+          ],
+          "contro": [
+            "solo articoli",
+            "sito disordinato"
+          ]
+        },
+        {
+          "name": "Newsbartender",
+          "domain": "newsbartenders.it",
+          "url": "https://www.newsbartenders.it/",
+          "description": "I colori non mettono a proprio agio nella permanenza del sito, regalano materiale didattico gratuito molto utile per i neofiti",
+          "pro": [
+            "materiale didattico free",
+            "fanno corsi"
+
+          ],
+          "contro": [
+            "sito obsoleto",
+            "non specifico sul bartending"
+          ]
+        },
+        {
+          "name": "Bargiornale",
+          "domain": "bargiornale.it",
+          "url": "https://www.bargiornale.it/",
+          "description": "Sicuramente un must del settore, continui contenuti di diverse varietà",
+          "pro": [
+            "varietà amplia di argomenti",
+            "hanno magazine"
+
+          ],
+          "contro": [
+            "sito obsoleto",
+            "disordinato"
+          ]
+        },
+        {
+          "name": "Mixerplanet",
+          "domain": "mixerplanet.com",
+          "url": "https://www.mixerplanet.com/",
+          "description": "sicuro un altro dei must come rivista, ma mi sembra un pò una bandiera, va dove tira il vento",
+          "pro": [
+            "varietà amplia argomenti",
+            "hanno magazine"
+
+          ],
+          "contro": [
+            "paghi e intervistano chiunque",
+            "confuso con gli argomenti"
+          ]
+        },
+        {
+          "name": "Bartales",
+          "domain": "bartales.it",
+          "url": "http://www.bartales.it/",
+          "description": "essere al top nel settore ti rende invincibile, ma con i poteri del web nel 2019 molti siti insorgono, attenzione dovrebbero aggiornare i loro contenuti",
+          "pro": [
+            "sito top",
+            "hanno magazine",
+            "multilingua"
+
+          ],
+          "contro": [
+            "poche funzioni",
+            "non continuativi con gli argomenti"
+          ]
+        },
+        {
+          "name": "Bar",
+          "domain": "bar.it",
+          "url": "https://www.bar.it/",
+          "description": "Bel sito, attenti ai dettagli, belle foto, bella penna.",
+          "pro": [
+            "sito top",
+            "vicino ai bartender",
+            "bel dominio"
+
+
+          ],
+          "contro": [
+            "canale youtube vuoto",
+            "brutto logo"
           ]
         }
       ]
     },
     {
-      "categoryName": "Category two",
-      "categorySubtitle": "Th second category, the more the better!",
-      "categoryEmoji": "🍓",
+      "categoryName": "E-COMMERCE",
+      "categorySubtitle": "Dove trovare quello di cui hai bisogno",
+      "categoryEmoji": "🛒",
       "categoryItems": [
         {
-          "name": "HelpfulSite",
-          "domain": "test.com",
-          "url": "https://example.com",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tempus nisl, et lobortis ex. Nunc sit amet urna vel diam semper ultrices. Suspendisse lectus nibh, venenatis quis arcu a, viverra convallis metus. Aliquam aliquam a massa eu sollicitudin. In pellentesque feugiat mauris eget interdum. Nunc eu felis quis dui sollicitudin condimentum nec sit amet neque. Vivamus ullamcorper augue in massa ullamcorper viverra.",
+          "name": "RGmania",
+          "domain": "rgmania.com",
+          "url": "https://www.rgmania.com/",
+          "description": "Sito di riferimanto per la ristorazione, prodotti di qualità.",
           "pro": [
-            "good stuff",
-            "pretty vibes",
-            "ottimo blog"
+            "prodotto qualità",
+            "parte blog",
+            "descrizioni prodotti"
           ],
           "contro": [
-            "no bueno man",
-            "no woman no cry",
-            "another bad bad reason here"
+            "sito disordinato",
+            "foto piccole",
+            "prezzi alti"
           ]
         },
         {
-          "name": "Google Maps",
-          "domain": "maps.google.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Ebarman",
+          "domain": "ebarman.it",
+          "url": "https://www.ebarman.it/",
+          "description": "uno dei migliori siti di ecommerce, anche anche alcolici",
+          "pro": [
+            "varietà prodotti",
+            "anche alcolici"
+
+          ],
+          "contro": [
+            "anche cineste",
+            "brutto sito",
+            "sito disordinato"
+          ]
+        },
+        {
+          "name": "Barlab",
+          "domain": "barlab.it",
+          "url": "http://www.barlab.it/",
+          "description": "un catologo online praticamente, non puoi comprare dal sito, devi contattarli, antiquati!",
+          "pro": [
+            "bel design",
+            "prodotti ricercati",
+            "varietà contenuti"
+          ],
+          "contro": [
+            ""
+          ]
+        },
+        {
+          "name": "Vega-direct",
+          "domain": "vega-direct.com",
+          "url": "https://www.vega-direct.com/it-it/",
+          "description": "sito ben organizzato, molto fornito con prodotti di qualità 360 gradi nella ristorazione",
+          "pro": [
+            "bel design",
+            "360 gradi nella ristorazione"
+
+          ],
+          "contro": [
+            "brutti colori",
+            "sito troppo pieno"
+          ]
+        },
+        {
+          "name": "Attrezzaturabarman",
+          "domain": "attrezzaturabarman.it",
+          "url": "https://www.attrezzaturabarman.it/it/",
+          "description": "sito famoso, prodotti di qualità e con grande esperienza, buon customer service",
+          "pro": [
+            "affiliazione",
+            "varienta prodotti",
+            "bei prezzi",
+            "chat bot"
+          ],
+          "contro": [
+            "brutti colori"
+          ]
+        },
+        {
+          "name": "Nonsoloflair",
+          "domain": "nonsoloflair.it",
+          "url": " https://www.nonsoloflair.it/",
+          "description": "riuscissi ad aprire il sito vi direi come sarebbe",
           "pro": [
             "again good vibes",
             "wonderful ambient"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "sito lentissimo",
+            "flair da giocolieri"
           ]
         },
         {
-          "name": "Fiverr",
-          "domain": "fiverr.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Lumian",
+          "domain": "lumian.com",
+          "url": "https://www.lumianbartools.com/",
+          "description": "prodotti strafamosi, non c'è un bancone senza qualcosa della lumina, ma ogni barman dice che la qualità è pessima",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "consegna 24h",
+            "siti decente"
           ],
           "contro": [
             "sito lento",
-            "bad customer service"
+            "qualità bassa"
           ]
         },
         {
-          "name": "Facebook",
-          "domain": "fb.me",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Bravobarista",
+          "domain": "bravobarista.com",
+          "url": "https://www.bravobarista.it/37-barman",
+          "description": "sito non specifico per barman ma comunque munito di attrezzatura per lo stesso.",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bel design",
+            "prezzi buoni"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "prodotti media qualità",
+            "siti disorganizzato"
           ]
         },
         {
-          "name": "Amazon",
-          "domain": "amazon.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Barticular",
+          "domain": "barticular.com",
+          "url": "https://www.barticular.com/",
+          "description": "vasta varietà di prodotti brandizzati, sito ben organizzato",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bel design",
+            "bel brand",
+            "prodotti per molecolare"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "qualità bassa"
           ]
         },
         {
-          "name": "Bitnami",
-          "domain": "bitnami.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Barinprogress",
+          "domain": "barinprogress.com",
+          "url": "http://barinprogress.com/it/",
+          "description": "un catologo online praticamente, non puoi comprare dal sito, devi contattarli, antiquati!",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bel design",
+            "prodotti ricercati"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "non puoi comprare dal sito"
           ]
         },
         {
-          "name": "UltimateGuitar",
-          "domain": "ultimate-guitar.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Thebartenders",
+          "domain": "thebartender.it",
+          "url": "https://thebartenders.it/Shop/",
+          "description": "sito non organizzato, con una parte blog molto utile per neofiti",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bel design",
+            "prodotti per noefiti"
+
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "sito vecchio",
+            "prodotti scarsa qualità"
           ]
         }
       ]
     },
     {
-      "categoryName": "Category three",
-      "categorySubtitle": "Th third category, the more the better!",
-      "categoryEmoji": "👾",
+      "categoryName": "CANALI YOUTUBE",
+      "categorySubtitle": "Migliori Canali Youtube",
+      "categoryEmoji": "🎥",
       "categoryItems": [
         {
-          "name": "AnotherSite",
-          "domain": "thenx.com",
-          "url": "https://example.com",
-          "description": "a review of this website, however you wanna write it",
+          "name": "Mr.Bartender",
+          "domain": "Mr.Bartender",
+          "url": "https://www.youtube.com/channel/UCl42GFpxdJvr9hQdrSz0XuQ/",
+          "description": "Canale poco conosciuto ma che diventerà un riferimento sul tubo, il mogliore il lingua italiana",
           "pro": [
-            "good stuff",
-            "pretty vibes",
-            "ottimo blog"
+            "bel format",
+            "diverse rubriche",
+            "bei video",
+            "parti storiche"
           ],
           "contro": [
-            "no bueno man",
-            "no woman no cry",
-            "another good good reason here"
+            "pochi video",
+            "poco conosciuto"
           ]
         },
         {
-          "name": "BodyBuilding Official",
-          "domain": "bodybuilding.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Drink corner",
+          "domain": "Drink corner",
+          "url": "https://www.youtube.com/channel/UCrcHXs0s3rguLKQnJbCg6zw",
+          "description": "Canale che ha fatto la storia su l'argomento bartending, putroppo il canale è chiuso ma che è ancora un riferimento per youtube, posizione organica ancora dominante",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "casalingo",
+            "format sempre uguale"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "noioso",
+            "canale chiuso"
           ]
         },
         {
-          "name": "YouTube",
-          "domain": "youtube.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Bevi con fra",
+          "domain": "Bevi con fra",
+          "url": "https://www.youtube.com/channel/UCm_yGBb80qQg-vcgH8fuMqw",
+          "description": "molti video anche con spiegazioni esaustive, ricette semplici ma su argomenti complicati è incompetente, dovrebbe restare su argomenti semplici",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "canale in attività",
+            "molti video"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "format casalingo",
+            "non è bartender",
+            "video scarsi"
           ]
         },
         {
-          "name": "Github",
-          "domain": "github.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Il Giardino sotto il naso",
+          "domain": "Il giardino sotto il naso",
+          "url": "https://www.youtube.com/channel/UC1DasqIXbaUhcmfj_LF3x8A",
+          "description": "Grande professionista appassionato di botanica, grande oratore e bravo bartender",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bel format",
+            "bravo professionista"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "pochi classici,solo rivisitazioni",
+            "qualità video scarsa"
           ]
         },
         {
-          "name": "CodeMentor",
-          "domain": "codementor.io",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Darrin's mixology",
+          "domain": "Darrin's mixology",
+          "url": "https://www.youtube.com/channel/UCZeBLgSBAVI-8BxD4uG7cLw",
+          "description": "ragazzo giovane ma com già e idee chiare e le competenze per parlare del mondo bartending",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "Attento ai dettagli",
+            "Bel format"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "pochi video",
+            "sprovvisto di format"
           ]
         },
         {
-          "name": "W3Schools",
-          "domain": "w3schools.com",
-          "url": "https://example.com",
-          "description": "come write a new decription with better words and phrases n stuff no?",
+          "name": "Antonio Filippini",
+          "domain": "Antonio Filippini",
+          "url": "https://www.youtube.com/channel/UCv-Wmwxv5m0t-ny9Ji1z98A",
+          "description": "format interessante, purtroppo privo di classici perchè cerca di elemosinare organica dai risultati cercando di fare video che nessuno ha",
           "pro": [
-            "again good vibes",
-            "wonderful ambient"
+            "bei video",
+            "bravo oratore"
           ],
           "contro": [
-            "sito lento",
-            "bad customer service"
+            "format obsoleto",
+            "pochi classici",
+            "prodotti scarsa qualità"
+          ]
+        },
+        {
+          "name": "You tender",
+          "domain": "You tender",
+          "url": "https://www.youtube.com/channel/UCdwqP5Ht69_aNBmzi7Deycw",
+          "description": "format triste senza spiegazione, un altro che fa drink poco ricercati per sperare di apparire prima di altre nella ricerca",
+          "pro": [
+            "bei video",
+            "bravo oratore"
+          ],
+          "contro": [
+            "privo di voce",
+            "pochi classici",
+            "pochi video"
+          ]
+        },
+        {
+          "name": "Il Mondo dei drink",
+          "domain": "Il Mondo dei drink",
+          "url": "https://www.youtube.com/user/IlMondoDeiCocktail",
+          "description": "canale morto insieme a drink corner hanno fatto la storia dei video di drink in italiano, Bartender improvvisato in un baretto di provincia, rendava comunque l'idea",
+          "pro": [
+            "molti video",
+            "bravo oratore"
+          ],
+          "contro": [
+            "brutti video",
+            "non professionisti"
+          ]
+        },
+        {
+          "name": "Barman italia",
+          "domain": "Barman italia",
+          "url": "https://www.youtube.com/user/barmanitalia/featured",
+          "description": "video corti e semplici su classici facili da realizzare, su drink complicati non avendo la spiegazione sono complicati da riprodurre",
+          "pro": [
+            "molti video",
+            "format consolidato"
+          ],
+          "contro": [
+            "brutti video",
+            "senza voce e spigazione",
+            "niente parte storica"
           ]
         }
       ]
     },
     {
-      "categoryName": "Category Four",
-      "categorySubtitle": "Th fourth category, the more the better! what did u even expect man?",
-      "categoryEmoji": "🚀",
+      "categoryName": "CORSI",
+      "categorySubtitle": "Vuoi avvicinarti a questo mondo?",
+      "categoryEmoji": "📚",
+      "categoryItems": [
+        {
+          "name": "Corsi per Barman",
+          "domain": "corsi per barman",
+          "url": "https://www.corsiperbarman.it/",
+          "description": "famoso sito che sforna professionisti del settore",
+          "pro": [
+            "bel team",
+            "corsi in europa"
+          ],
+          "contro": [
+            "colore sito"
+          ]
+        },
+        {
+          "name": "Flair Academy",
+          "domain": "FlairAcademy",
+          "url": "https://www.flairacademy.it/",
+          "description": "riferimento del settore per la preparazione di futuri professionisti, ottimo per chi si vuole avvicinare a questo mestiere, presenti in molte città",
+          "pro": [
+            "bel Sito",
+            "organizzato"
+          ],
+          "contro": [
+            "sito lento"
+          ]
+        },
+        {
+          "name": "Bartender school",
+          "domain": "Bartender school",
+          "url": "https://www.bartenderschool.it/",
+          "description": "Diventi un barman divertendoti, organizzano corsi in tutto il mondo questi!",
+          "pro": [
+            "bel sito",
+            "bel logo"
+          ],
+          "contro": [
+            "sito pieno"
+          ]
+        },
+        {
+          "name": "Barman online",
+          "domain": "Barman online",
+          "url": "https://www.barmanonline.it/corsi/corso-barman-milano/scuola-barman/corso/corsi-bartender-flair/barista",
+          "description": "coristi di tutta italia questo è un altro sito se volete avvicinarvi a questa professione",
+          "pro": [
+            "bel design",
+            "bravi professori"
+          ],
+          "contro": [
+            "solo nord italia"
+          ]
+        },
+        {
+          "name": "Bartenders Academy",
+          "domain": "Bartendersacadey",
+          "url": "https://www.bartendersacademy.it/corso-di-barman-bartender/",
+          "description": "Esperienza di professionisti a servizio anche di startup, san fare tutto questi oh!",
+          "pro": [
+            "masterclass",
+            "consulenza"
+          ],
+          "contro": [
+            "sito lento",
+            "bad customer service"
+          ]
+        },
+        {
+          "name": "Degustibuss",
+          "domain": "Degustibuss",
+          "url": "https://www.degustibuss.it/corso-barman-riconosciuto/",
+          "description": "presenti nella ristorazione in generale, prezzi modici",
+          "pro": [
+            "bel sito",
+            "in tutta italia"
+          ],
+          "contro": [
+            "sito lento"
+          ]
+        },
+        {
+          "name": "Accademia Branca",
+          "domain": "Accademiabranca",
+          "url": "https://www.accademiabranca.it/?gclid=EAIaIQobChMI0v2g89nr4QIVkdCyCh3iTwLFEAMYASAAEgI7zPD_BwE",
+          "description": "già dal nome rende l'idea, il marchio della famiglia branca è sinonimo di qualità e serietà",
+          "pro": [
+            "sito assurdo",
+            "masterclass"
+          ],
+          "contro": [
+            "sito poco chiaro"
+          ]
+        },
+        {
+          "name": "F-B-S",
+          "domain": "F-b-s",
+          "url": "http://www.f-b-s.it/quanto-costa-un-corso-da-barman/",
+          "description": "altro scuola di riferimento al nord, hai l'imbarazzo della scelta",
+          "pro": [
+            "un sacco di corsi",
+            "masterclass"
+          ],
+          "contro": [
+            "sito poco chiaro"
+          ]
+        },
+        {
+          "name": "Diventare Barman",
+          "domain": "Diventarebarman",
+          "url": "https://www.diventarebarman.it/corso-barman-riconosciuto/",
+          "description": "parte corsi di una macchina che produce contenuti con il blog, sicuramente dei professionisti",
+          "pro": [
+            "un sacco di corsi",
+            "materiale gratuito"
+          ],
+          "contro": [
+            "poche info"
+          ]
+        },
+        {
+          "name": "Campari Academy",
+          "domain": "Campariacademy",
+          "url": "https://campariacademy.it/",
+          "description": "grande azienda dietro un grande prodotto, consiglio solo per i contatti che hai la possiblità di farti, gioca bene le tua carte",
+          "pro": [
+            "un sacco di corsi",
+            "maestri illustri"
+          ],
+          "contro": [
+            "marchettato"
+          ]
+        },
+        {
+          "name": "Accademia Del Bar",
+          "domain": "Accademiadelbar",
+          "url": "http://www.accademiadelbar.it/",
+          "description": "varietà di corsi avanzati, prova gratuita se non sai se questo sia la tua strada",
+          "pro": [
+            "un sacco di corsi",
+            "materiale gratuito"
+          ],
+          "contro": [
+            "sito poco chiaro"
+          ]
+        },
+        {
+          "name": "Bartendence",
+          "domain": "Bartendence",
+          "url": "https://www.bartendence.com/2-corsi-barman-primo-livello",
+          "description": "non si dove si svolgano questi corsi, bisogna chiedere informazioni.",
+          "pro": [
+            "pagamento rateizzato",
+            "bel sito"
+          ],
+          "contro": [
+            "sito poco chiaro"
+          ]
+        },
+        {
+          "name": "Non solo Flair",
+          "domain": "Nonsoloflair",
+          "url": "https://www.nonsoloflair.it/scuola-barman.html",
+          "description": "pochi livelli di corsi, solo per il nord-est italia",
+          "pro": [
+            "sito poche info"
+          ],
+          "contro": [
+            "sito poco chiaro",
+            "corsi solo friuli"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "TROVA LAVORO",
+      "categorySubtitle": "Trova il lavoro che fa per te",
+      "categoryEmoji": "💸",
       "categoryItems": [
         {
           "name": "Goldman Sachs",
